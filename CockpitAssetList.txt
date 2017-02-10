@@ -1,0 +1,23 @@
+levers:
+sprint forward/walk forward/stop/walk backward/sprint backward (5 states)
+body lift up
+left roll
+right roll
+
+steering wheel thing:
+changing direction
+
+button:
+tusk melee
+Emergency stamina (should have glass shield/covering)
+
+slider thing:
+cannon 1
+cannon 2
+cannon 3
+
+monitors:
+front view
+left side view
+right side view
+back side view (not sure if you need)

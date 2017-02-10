@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0ee6f179d22562f4a8bc775c652929e6
+timeCreated: 1485472357
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SnareDrum One NBP
+  fontNames:
+  - SnareDrum One NBP
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

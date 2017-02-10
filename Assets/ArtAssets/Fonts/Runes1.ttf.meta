@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4a3b02aa0cfeae64a9cad4a78a9c184d
+timeCreated: 1485472357
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Runes
+  fontNames:
+  - Runes
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
