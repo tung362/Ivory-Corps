@@ -4,35 +4,61 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour
 {
+    /*Settings*/
     public GameObject Hand;
-    public GameObject ObjectToGrab;
-
-    //Settings
     public float MaximumGrabDistance = 2;
     public float MoveSpeed = 10;
     public float RotationSpeed = 2000;
 
-    public bool IsGrabbingSomething = false;
+    /*Data*/
+    [HideInInspector]
+    public GameObject ObjectToGrab;
+    private bool StartupCheck = true;
+    private Vector3 PreviousPosition = Vector3.zero;//Used for tracking velocity to throw
 
+    /*Controller*/
     [HideInInspector]
     private StickController Stick;
 
     void Start ()
     {
         Stick = GetComponent<StickController>();
+        Hand.GetComponent<ObjectDetect>().Grabber = this;
     }
 
 	void FixedUpdate()
     {
-        if (ObjectToGrab != null) return;
-        if (Vector3.Distance(ObjectToGrab.transform.position, Hand.transform.position) > MaximumGrabDistance) return;
-
+        OnIniltalStart();
         UpdateHand(UpdateInput());
+        PreviousPosition = transform.position;
+    }
+
+    void OnIniltalStart()
+    {
+        //Set position before start of game so that the hand doesn't knock everything to space
+        if (StartupCheck)
+        {
+            if (GetComponent<SteamVR_TrackedObject>().isValid)
+            {
+                Hand.transform.position = transform.position;
+                StartupCheck = false;
+            }
+        }
     }
 
     bool UpdateInput()
     {
         bool retval = true;
+
+        //Checks
+        if (ObjectToGrab == null) return true;
+        if (Vector3.Distance(ObjectToGrab.transform.position, Hand.transform.position) > MaximumGrabDistance)
+        {
+            ObjectToGrab = null;
+            return true;
+        }
+
+        //Passed all checks
         //Start
         if (Stick.Controller.GetPressDown(Stick.GripyButton)) retval = OnFirstPressed();
         //Held
@@ -42,23 +68,21 @@ public class Grab : MonoBehaviour
         return retval;
     }
 
-    void UpdateHand(bool CanRun)
-    {
-        if (!CanRun) return;
-        Hand.transform.position = Vector3.MoveTowards(Hand.transform.position, transform.position, MoveSpeed * Time.fixedDeltaTime);
-        Hand.transform.rotation = Quaternion.RotateTowards(Hand.transform.rotation, transform.rotation, RotationSpeed * Time.fixedDeltaTime);
-    }
-
     bool OnFirstPressed()
     {
         bool retval = true;
         if (ObjectToGrab.tag == "Lever")
         {
 
+            //Reapplies original layer to parent and childs
+            ObjectToGrab.layer = LayerMask.NameToLayer(Hand.GetComponent<ObjectDetect>().StartingLayerName);
+            ApplyLayerToChilds(ObjectToGrab.transform, Hand.GetComponent<ObjectDetect>().StartingLayerName);
         }
         else if (ObjectToGrab.tag == "Item")
         {
-            
+            //Reapplies original layer to parent and childs
+            ObjectToGrab.layer = LayerMask.NameToLayer(Hand.GetComponent<ObjectDetect>().StartingLayerName);
+            ApplyLayerToChilds(ObjectToGrab.transform, Hand.GetComponent<ObjectDetect>().StartingLayerName);
         }
         return retval;
     }
@@ -66,8 +90,20 @@ public class Grab : MonoBehaviour
     bool OnHeld()
     {
         bool retval = true;
+
+        //Remove physics if there is any attacted
+        if (ObjectToGrab.GetComponent<Rigidbody>() != null) ObjectToGrab.GetComponent<Rigidbody>().isKinematic = true;
+        if (Hand.GetComponent<Rigidbody>() != null) Hand.GetComponent<Rigidbody>().isKinematic = true;
+
         if (ObjectToGrab.tag == "Lever")
         {
+            Hand.transform.position = Vector3.MoveTowards(Hand.transform.position, ObjectToGrab.GetComponent<Lever>().Handle.transform.position, MoveSpeed * Time.fixedDeltaTime);
+            Hand.transform.rotation = Quaternion.RotateTowards(Hand.transform.rotation, transform.rotation, RotationSpeed * Time.fixedDeltaTime);
+
+            //get distance from hand and controller
+            float distance = Vector3.Distance(transform.position, ObjectToGrab.transform.position);
+
+            //We don't want it to follow the controller when grabbing a lever but instead follow the lever
             retval = false;
         }
         else if (ObjectToGrab.tag == "Item")
@@ -81,20 +117,45 @@ public class Grab : MonoBehaviour
     bool OnLetGo()
     {
         bool retval = true;
+
+        //Apply layer tag to parent and child
+        ObjectToGrab.layer = LayerMask.NameToLayer("IgnoreHands");
+        ApplyLayerToChilds(ObjectToGrab.transform, "IgnoreHands");
+
         if (ObjectToGrab.tag == "Lever")
         {
 
         }
         else if (ObjectToGrab.tag == "Item")
         {
-        }
+            //Note that readding physics is handed in ObjectDetect script
 
-        ObjectToGrab = null;
+            //Applies throw force and reenable physics if there is physics attacted
+            if (ObjectToGrab.GetComponent<Rigidbody>() != null)
+            {
+                Vector3 force = (transform.position - PreviousPosition) / Time.fixedDeltaTime;
+                ObjectToGrab.GetComponent<Rigidbody>().isKinematic = false;
+                ObjectToGrab.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                ObjectToGrab.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+            }
+        }
         return retval;
     }
 
-    void OnTriggerEnter(Collider other)
+    void UpdateHand(bool CanRun)
     {
-        if (other.tag == "Lever" || other.tag == "Item") ObjectToGrab = other.transform.gameObject;
+        if (!CanRun) return;
+        //If not grabbing anything return to following the controller
+        Hand.transform.position = Vector3.MoveTowards(Hand.transform.position, transform.position, MoveSpeed * Time.fixedDeltaTime);
+        Hand.transform.rotation = Quaternion.RotateTowards(Hand.transform.rotation, transform.rotation, RotationSpeed * Time.fixedDeltaTime);
+    }
+
+    void ApplyLayerToChilds(Transform TheGameObject, string LayerName)
+    {
+        foreach (Transform child in TheGameObject)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer(LayerName);
+            ApplyLayerToChilds(child, LayerName);
+        }
     }
 }

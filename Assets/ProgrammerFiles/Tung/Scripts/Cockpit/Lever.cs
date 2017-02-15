@@ -6,16 +6,17 @@ using UnityEngine.Events;
 //[ExecuteInEditMode]
 public class Lever : MonoBehaviour
 {
-    //Settings
-    //1 = Rotational Lever, 2 = Push/Pull Lever
-    public int LeverType = 1;
+    /*Settings*/
+    public GameObject RotationSpot;
+    public GameObject Handle;
+    public int LeverType = 1; //1 = Rotational Lever, 2 = Push/Pull Lever
     [Range(0.0f, 1.0f)]
     public float LeverValue = 0.5f;
     public Vector2 TransitionRange = new Vector2(-62.29f, 62.29f);
     public bool IsClunky = true;
     public float ClunkyTransitionSpeed = 200;
 
-    //Callable functions
+    /*Callable functions*/
     public UnityEvent[] OnToggled;
 
     private Vector3 StartingRotation = Vector3.zero;
@@ -23,8 +24,8 @@ public class Lever : MonoBehaviour
 
     void Start()
     {
-        StartingRotation = transform.localEulerAngles;
-        StartingPosition = transform.localPosition;
+        StartingRotation = RotationSpot.transform.localEulerAngles;
+        StartingPosition = RotationSpot.transform.localPosition;
     }
 
     void Update()
@@ -47,21 +48,21 @@ public class Lever : MonoBehaviour
             for(int i = 0; i < OnToggled.Length; ++i)
             {
                 PreviousRotation = i / (OnToggled.Length - 1.0f);
-                float progress = transform.eulerAngles.x / TransitionRange.y;
+                float progress = RotationSpot.transform.eulerAngles.x / TransitionRange.y;
                 if (i == 0)
                 {
                     Quaternion Goal = Quaternion.Lerp(MinimumRotation, MaximumRotation, 0);
-                    if (LeverValue >= PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Goal, ClunkyTransitionSpeed * Time.deltaTime);
+                    if (LeverValue >= PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) RotationSpot.transform.localRotation = Quaternion.RotateTowards(RotationSpot.transform.localRotation, Goal, ClunkyTransitionSpeed * Time.deltaTime);
                 }
                 else
                 {
                     Quaternion Goal = Quaternion.Lerp(MinimumRotation, MaximumRotation, PreviousRotation);
-                    if (LeverValue > PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Goal, ClunkyTransitionSpeed * Time.deltaTime);
+                    if (LeverValue > PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) RotationSpot.transform.localRotation = Quaternion.RotateTowards(RotationSpot.transform.localRotation, Goal, ClunkyTransitionSpeed * Time.deltaTime);
                 }
                 PreviousLimit = (i + 1.0f) / OnToggled.Length;
             }
         }
-        else transform.localRotation = Quaternion.Lerp(MinimumRotation, MaximumRotation, LeverValue);
+        else RotationSpot.transform.localRotation = Quaternion.Lerp(MinimumRotation, MaximumRotation, LeverValue);
     }
 
     void UpdateTranslation()
@@ -76,21 +77,21 @@ public class Lever : MonoBehaviour
             for (int i = 0; i < OnToggled.Length; ++i)
             {
                 PreviousPosition = i / (OnToggled.Length - 1.0f);
-                float progress = transform.eulerAngles.x / TransitionRange.y;
+                float progress = RotationSpot.transform.eulerAngles.x / TransitionRange.y;
                 if (i == 0)
                 {
                     Vector3 Goal = Vector3.Lerp(MinimumPosition, MaximumPosition, 0);
-                    if (LeverValue >= PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) transform.localPosition = Vector3.MoveTowards(transform.localPosition, Goal, ClunkyTransitionSpeed * Time.deltaTime);
+                    if (LeverValue >= PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) RotationSpot.transform.localPosition = Vector3.MoveTowards(RotationSpot.transform.localPosition, Goal, ClunkyTransitionSpeed * Time.deltaTime);
                 }
                 else
                 {
                     Vector3 Goal = Vector3.Lerp(MinimumPosition, MaximumPosition, PreviousPosition);
-                    if (LeverValue > PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) transform.localPosition = Vector3.MoveTowards(transform.localPosition, Goal, ClunkyTransitionSpeed * Time.deltaTime);
+                    if (LeverValue > PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) RotationSpot.transform.localPosition = Vector3.MoveTowards(RotationSpot.transform.localPosition, Goal, ClunkyTransitionSpeed * Time.deltaTime);
                 }
                 PreviousLimit = (i + 1.0f) / OnToggled.Length;
             }
         }
-        else transform.localPosition = Vector3.Lerp(MinimumPosition, MaximumPosition, LeverValue);
+        else RotationSpot.transform.localPosition = Vector3.Lerp(MinimumPosition, MaximumPosition, LeverValue);
     }
 
     //Invokes a function depending on which state the lever is on
