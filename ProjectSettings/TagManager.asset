@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Lever
   - Item
+  - SpawnPoint
+  - Elephant
   layers:
   - Default
   - TransparentFX

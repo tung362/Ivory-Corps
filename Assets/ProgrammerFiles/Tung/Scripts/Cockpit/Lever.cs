@@ -4,17 +4,23 @@ using UnityEngine;
 using UnityEngine.Events;
 
 //[ExecuteInEditMode]
+//Handles the lever functions
 public class Lever : MonoBehaviour
 {
     /*Settings*/
     public GameObject RotationSpot;
     public GameObject Handle;
+    public GameObject DragStart;
+    public GameObject DragEnd;
     public int LeverType = 1; //1 = Rotational Lever, 2 = Push/Pull Lever
     [Range(0.0f, 1.0f)]
     public float LeverValue = 0.5f;
     public Vector2 TransitionRange = new Vector2(-62.29f, 62.29f);
     public bool IsClunky = true;
     public float ClunkyTransitionSpeed = 200;
+
+    /*Data*/
+    public int CurrentState = 0; //Used by anything that can't be invoked with unityevents
 
     /*Callable functions*/
     public UnityEvent[] OnToggled;
@@ -102,11 +108,19 @@ public class Lever : MonoBehaviour
         {
             if (i == 0)
             {
-                if (LeverValue >= PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) OnToggled[i].Invoke();
+                if (LeverValue >= PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length)
+                {
+                    CurrentState = i;
+                    OnToggled[i].Invoke();
+                }
             }
             else
             {
-                if (LeverValue > PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length) OnToggled[i].Invoke();
+                if (LeverValue > PreviousLimit && LeverValue <= (i + 1.0f) / OnToggled.Length)
+                {
+                    CurrentState = i;
+                    OnToggled[i].Invoke();
+                }
             }
             PreviousLimit = (i + 1.0f) / OnToggled.Length;
         }

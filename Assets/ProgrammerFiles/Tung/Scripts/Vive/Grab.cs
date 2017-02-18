@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Handles all grabbing mechanics
 public class Grab : MonoBehaviour
 {
     /*Settings*/
@@ -71,19 +72,11 @@ public class Grab : MonoBehaviour
     bool OnFirstPressed()
     {
         bool retval = true;
-        if (ObjectToGrab.tag == "Lever")
-        {
+        //Reapplies original layer to parent and childs
+        ObjectToGrab.layer = LayerMask.NameToLayer("IgnoreHands");
+        ApplyLayerToChilds(ObjectToGrab.transform, "IgnoreHands");
+        if (ObjectToGrab.GetComponent<Rigidbody>() != null) ObjectToGrab.GetComponent<Rigidbody>().useGravity = false;
 
-            //Reapplies original layer to parent and childs
-            ObjectToGrab.layer = LayerMask.NameToLayer(Hand.GetComponent<ObjectDetect>().StartingLayerName);
-            ApplyLayerToChilds(ObjectToGrab.transform, Hand.GetComponent<ObjectDetect>().StartingLayerName);
-        }
-        else if (ObjectToGrab.tag == "Item")
-        {
-            //Reapplies original layer to parent and childs
-            ObjectToGrab.layer = LayerMask.NameToLayer(Hand.GetComponent<ObjectDetect>().StartingLayerName);
-            ApplyLayerToChilds(ObjectToGrab.transform, Hand.GetComponent<ObjectDetect>().StartingLayerName);
-        }
         return retval;
     }
 
@@ -92,7 +85,7 @@ public class Grab : MonoBehaviour
         bool retval = true;
 
         //Remove physics if there is any attacted
-        if (ObjectToGrab.GetComponent<Rigidbody>() != null) ObjectToGrab.GetComponent<Rigidbody>().isKinematic = true;
+        //if (ObjectToGrab.GetComponent<Rigidbody>() != null) ObjectToGrab.GetComponent<Rigidbody>().isKinematic = true;
         if (Hand.GetComponent<Rigidbody>() != null) Hand.GetComponent<Rigidbody>().isKinematic = true;
 
         if (ObjectToGrab.tag == "Lever")
@@ -100,8 +93,7 @@ public class Grab : MonoBehaviour
             Hand.transform.position = Vector3.MoveTowards(Hand.transform.position, ObjectToGrab.GetComponent<Lever>().Handle.transform.position, MoveSpeed * Time.fixedDeltaTime);
             Hand.transform.rotation = Quaternion.RotateTowards(Hand.transform.rotation, transform.rotation, RotationSpeed * Time.fixedDeltaTime);
 
-            //get distance from hand and controller
-            float distance = Vector3.Distance(transform.position, ObjectToGrab.transform.position);
+            CalculateLeverDragValue();
 
             //We don't want it to follow the controller when grabbing a lever but instead follow the lever
             retval = false;
@@ -122,11 +114,7 @@ public class Grab : MonoBehaviour
         ObjectToGrab.layer = LayerMask.NameToLayer("IgnoreHands");
         ApplyLayerToChilds(ObjectToGrab.transform, "IgnoreHands");
 
-        if (ObjectToGrab.tag == "Lever")
-        {
-
-        }
-        else if (ObjectToGrab.tag == "Item")
+        if (ObjectToGrab.tag == "Item")
         {
             //Note that readding physics is handed in ObjectDetect script
 
@@ -134,8 +122,8 @@ public class Grab : MonoBehaviour
             if (ObjectToGrab.GetComponent<Rigidbody>() != null)
             {
                 Vector3 force = (transform.position - PreviousPosition) / Time.fixedDeltaTime;
-                ObjectToGrab.GetComponent<Rigidbody>().isKinematic = false;
-                ObjectToGrab.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                //ObjectToGrab.GetComponent<Rigidbody>().isKinematic = false;
+                ObjectToGrab.GetComponent<Rigidbody>().useGravity = true;
                 ObjectToGrab.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
             }
         }
@@ -157,5 +145,19 @@ public class Grab : MonoBehaviour
             child.gameObject.layer = LayerMask.NameToLayer(LayerName);
             ApplyLayerToChilds(child, LayerName);
         }
+    }
+
+    void CalculateLeverDragValue()
+    {
+        //Calculations for lever pull/push
+        float controllerDistance = Vector3.Distance(transform.position, ObjectToGrab.GetComponent<Lever>().DragEnd.transform.position);
+        float totalDistance = Vector3.Distance(ObjectToGrab.GetComponent<Lever>().DragEnd.transform.position, ObjectToGrab.GetComponent<Lever>().DragStart.transform.position);
+        float controllerDistanceReversed = Vector3.Distance(transform.position, ObjectToGrab.GetComponent<Lever>().DragStart.transform.position);
+
+        //Gets rid of the extra distance
+        float extraDistance = controllerDistanceReversed - controllerDistance;
+
+        float result = (controllerDistance / totalDistance) - extraDistance;
+        ObjectToGrab.GetComponent<Lever>().LeverValue = result;
     }
 }

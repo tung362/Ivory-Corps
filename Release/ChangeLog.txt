@@ -1,0 +1,7 @@
+2-17-2017-Alpha-----------------------
+Added item grabbing
+Added lever grabbing
+Added item throwing
+Added controls to move camera(elephant) around using the levers
+Added networking framework
+Started working on locomotion
