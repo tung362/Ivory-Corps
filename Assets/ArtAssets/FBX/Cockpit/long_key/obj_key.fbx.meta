@@ -1,33 +1,16 @@
 fileFormatVersion: 2
-guid: da44fa6b0ae5888428b12d19ca5247da
-timeCreated: 1487382274
+guid: 89032943cf3ddb74e9fa12c5173cd663
+timeCreated: 1490229237
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: bottom_joints
-    100002: //RootNode
-    100004: ik_bottom_handle
-    100006: ik_top_handle
-    100008: joint1
-    100010: joint2
-    100012: joint6
-    100014: joint7
-    100016: middle_joint
-    100018: top_joints
-    400000: bottom_joints
-    400002: //RootNode
-    400004: ik_bottom_handle
-    400006: ik_top_handle
-    400008: joint1
-    400010: joint2
-    400012: joint6
-    400014: joint7
-    400016: middle_joint
-    400018: top_joints
-    4300000: Hotdog
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: key
     9500000: //RootNode
-    13700000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -52,7 +35,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

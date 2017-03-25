@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class Lever : MonoBehaviour
 {
     /*Settings*/
+    [Header("Settings")]
     public GameObject RotationSpot;
     public GameObject Handle;
     public GameObject DragStart;

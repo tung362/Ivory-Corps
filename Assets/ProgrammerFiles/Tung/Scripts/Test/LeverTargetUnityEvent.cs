@@ -12,12 +12,10 @@ public class LeverTargetUnityEvent : NetworkBehaviour
 
     /*Required components*/
     private ManagerTracker Tracker;
-    private MovementTest TheMovementTest;
 
     void Start ()
     {
 		Tracker = FindObjectOfType<ManagerTracker>();
-        TheMovementTest = GetComponent<MovementTest>();
     }
 	
 	void Update ()

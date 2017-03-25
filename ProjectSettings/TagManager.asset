@@ -8,6 +8,8 @@ TagManager:
   - Item
   - SpawnPoint
   - Elephant
+  - GrabZone
+  - Crank
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - Hands
   - IgnoreHands
-  - 
+  - Buttons
   - 
   - 
   - 
