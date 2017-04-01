@@ -168,7 +168,7 @@ public class Grab : MonoBehaviour
     void CalculateCrankValue()
     {
         Crank theCrank = ObjectToGrab.GetComponent<Crank>();
-        Vector3 handLocalPosition = ObjectToGrab.transform.InverseTransformPoint(Hand.transform.position);
+        Vector3 handLocalPosition = ObjectToGrab.transform.InverseTransformPoint(transform.position); //Hand its tracking (in this case the controller)
         Vector3 handLocalDirection = (new Vector3(0, handLocalPosition.y, handLocalPosition.z) - new Vector3(0, theCrank.RotationSpot.transform.localPosition.y, theCrank.RotationSpot.transform.localPosition.z)).normalized;
         float handAngle = Vector3.Angle(theCrank.StartingForward, handLocalDirection);
         Vector3 handCross = Vector3.Cross(theCrank.StartingForward, ObjectToGrab.transform.position);
@@ -177,5 +177,17 @@ public class Grab : MonoBehaviour
         if (handDot < 0) handAngle = 360 - handAngle;
 
         theCrank.RotationSpot.transform.localRotation = Quaternion.Euler(handAngle, 0, 0);
+
+
+        //Crank theCrank = ObjectToGrab.GetComponent<Crank>();
+        //Vector3 handLocalPosition = ObjectToGrab.transform.InverseTransformPoint(Hand.transform.position);
+        //Vector3 handLocalDirection = (new Vector3(0, handLocalPosition.y, handLocalPosition.z) - new Vector3(0, theCrank.RotationSpot.transform.localPosition.y, theCrank.RotationSpot.transform.localPosition.z)).normalized;
+        //float handAngle = Vector3.Angle(theCrank.StartingForward, handLocalDirection);
+        //Vector3 handCross = Vector3.Cross(theCrank.StartingForward, ObjectToGrab.transform.position);
+        //float handDot = Vector3.Dot(handCross, handLocalDirection);
+
+        //if (handDot < 0) handAngle = 360 - handAngle;
+
+        //theCrank.RotationSpot.transform.localRotation = Quaternion.Euler(handAngle, 0, 0);
     }
 }

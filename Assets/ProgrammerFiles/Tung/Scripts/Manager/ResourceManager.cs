@@ -13,4 +13,6 @@ public class ResourceManager : NetworkBehaviour
     {
         Tracker = FindObjectOfType<ManagerTracker>();
     }
+
+
 }

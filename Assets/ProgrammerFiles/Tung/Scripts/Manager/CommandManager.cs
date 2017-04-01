@@ -36,6 +36,12 @@ public class CommandManager : NetworkBehaviour
         SpawnElephant(Position, Rotation, ID);
     }
 
+    [Command]
+    public void CmdFire()
+    {
+
+    }
+
     //Server callbacks
     [ServerCallback]
     public void SpawnElephant(Vector3 Position, Quaternion Rotation, int ID)

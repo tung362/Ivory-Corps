@@ -10,6 +10,8 @@ TagManager:
   - Elephant
   - GrabZone
   - Crank
+  - Ammo
+  - Cube
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Hands
   - IgnoreHands
   - Buttons
-  - 
+  - ArtillaryAmmo
   - 
   - 
   - 

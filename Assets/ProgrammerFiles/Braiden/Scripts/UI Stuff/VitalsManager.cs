@@ -9,12 +9,13 @@ using UnityEngine;
 public class VitalsManager : MonoBehaviour {
 
     [Header("Vitals Assembly Parts")]
-    public GameObject sphere;
-    public GameObject leftCorner;
-    public GameObject rightCorner;
+    public Transform     pulsePos;
+    public GameObject    leftCorner;
+    public GameObject    rightCorner;
     public TrailRenderer VitalTrailRend;
-    public AudioClip heartBeatSound;
-    public AudioSource AudioPlaybackPos;
+    public AudioClip     heartBeatSound;
+    public AudioSource   AudioPlaybackPos;
+    public RectTransform BackgroundImage;
 
     [Header("Monitor Variables")]
     //how many scribbles per given spot
@@ -22,7 +23,7 @@ public class VitalsManager : MonoBehaviour {
     public float Frequency;
     Vector2 xRange, yRange, zRange;
     public bool xAxis, yAxis, zAxis;
-    protected Vector3 currAxis;
+    //protected Vector3 currAxis;
     public float HeartRate;
     public Vector3 startPos = Vector3.zero, endPos  = Vector3.zero;
     Vector3 followPos;
@@ -33,32 +34,36 @@ public class VitalsManager : MonoBehaviour {
 
     private void Start()
     {
-        startPos = leftCorner.transform.position;
-        endPos = rightCorner.transform.position;
+        startPos =  leftCorner.transform.position;
+        endPos   = rightCorner.transform.position;
 
-        sphere.transform.position = startPos;
+        pulsePos.position = startPos;
         xRange = new Vector2(startPos.x, endPos.x) * VitalsScale;
         yRange = new Vector2(startPos.y, endPos.y) * VitalsScale;
         zRange = new Vector2(startPos.z, endPos.z) * VitalsScale;
 
-        if (xAxis){ currAxis += new Vector3(1, 0, 0);}
-        if (yAxis){ currAxis += new Vector3(0, 1, 0);}
-        if (zAxis){ currAxis += new Vector3(0, 0, 1);}
+        //if (xAxis){ currAxis += new Vector3(1, 0, 0);}
+        //if (yAxis){ currAxis += new Vector3(0, 1, 0);}
+        //if (zAxis){ currAxis += new Vector3(0, 0, 1);}
+        
+      
 
     }
 
     private void Update()
     {
+        leftCorner.transform.position = startPos;
+        rightCorner.transform.position = endPos;
+        this.transform.localScale = new Vector3(VitalsScale, VitalsScale, VitalsScale);
+        followPos.x += movePulse();
+        heartBeat();
 
-        followPos.x += moveXDirection();
-        followPosition(currAxis);
+        startPos =  leftCorner.transform.position;
+        endPos   = rightCorner.transform.position;
 
-        startPos = leftCorner.transform.position;
-        endPos = rightCorner.transform.position;
+        if (pulsePos.position.x > xRange.y){followPos.x = startPos.x;}
 
-        if (sphere.transform.position.x > xRange.y){followPos.x = startPos.x;}
-
-        sphere.transform.position = followPos;
+        pulsePos.position = followPos;
         Debug.Log(followPos);
 
         rTimer += Time.deltaTime;
@@ -66,14 +71,21 @@ public class VitalsManager : MonoBehaviour {
         if (rTimer >= resetTime) {rTimer = 0.0f;}
     }
 
+    void UpdateBackgroundImage()
+    {
+        //Make sure it's position & scale are within the boundaries
+        BackgroundImage.transform.position.Set(startPos.x, startPos.y, 0);
+        BackgroundImage.localScale = this.transform.localScale;
+    }
+
     // Will make the vitals move left to right
-    float moveXDirection()
+    float movePulse()
     {
         float inVec = leftCorner.transform.position.x;
         inVec += Time.deltaTime * HeartRate;
 
         //resets x pos if past max distance
-        if (sphere.transform.position.x > xRange.y){return startPos.x;}
+        if (pulsePos.position.x > xRange.y){return startPos.x;}
         else{return inVec;}
 
     }
@@ -83,7 +95,7 @@ public class VitalsManager : MonoBehaviour {
     bool goUpZ = true;
 
     //The funtion acts as the gates for when the position resets will happen for the Y axis
-    void followPosition(Vector3 axisOfChoice)
+    void heartBeat()
     {
         //              Gates
         if (followPos.y > yRange.y){goUpY = false; AudioPlaybackPos.PlayOneShot(heartBeatSound); }
