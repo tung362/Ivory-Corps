@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateObject : MonoBehaviour
+public class RotateObject : TungDoesMathForYou
 {
     public Vector3 RotationDirection = Vector3.zero;
     public float Speed = 1;

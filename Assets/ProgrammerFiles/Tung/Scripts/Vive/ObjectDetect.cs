@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Handles grabbing physics and buttons for the hands
-public class ObjectDetect : MonoBehaviour
+public class ObjectDetect : TungDoesMathForYou
 {
     //The Grab component this hand is tracked with
     [HideInInspector]

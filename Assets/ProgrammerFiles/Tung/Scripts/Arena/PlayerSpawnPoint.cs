@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 //Spawns and respawns elephant
-public class PlayerSpawnPoint : NetworkBehaviour
+public class PlayerSpawnPoint : TungDoesNetworkingForyou
 {
     /*Setting*/
     public int SpawnID = 0;

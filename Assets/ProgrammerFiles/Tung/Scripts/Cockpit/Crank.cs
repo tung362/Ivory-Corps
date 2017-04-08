@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 //Handles the crank functions
-public class Crank : MonoBehaviour
+public class Crank : TungDoesMathForYou
 {
     /*Settings*/
     [Header("Settings")]

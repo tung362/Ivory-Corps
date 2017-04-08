@@ -64,7 +64,7 @@ public class VitalsManager : MonoBehaviour {
         if (pulsePos.position.x > xRange.y){followPos.x = startPos.x;}
 
         pulsePos.position = followPos;
-        Debug.Log(followPos);
+        //Debug.Log(followPos);
 
         rTimer += Time.deltaTime;
 

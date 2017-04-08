@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Handles all grabbing mechanics
-public class Grab : MonoBehaviour
+public class Grab : TungDoesMathForYou
 {
     /*Settings*/
     public GameObject Hand;

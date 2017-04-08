@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Detects ammo for the cannons
-public class GunFeed : MonoBehaviour
+public class GunFeed : TungDoesMathForYou
 {
     private Gun TheGun;
 

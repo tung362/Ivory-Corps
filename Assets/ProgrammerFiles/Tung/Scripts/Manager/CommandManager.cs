@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 //Most client to server commands are located here
-public class CommandManager : NetworkBehaviour
+public class CommandManager : TungDoesNetworkingForyou
 {
     /*Prefabs to spawn*/
     public GameObject Elephant1;

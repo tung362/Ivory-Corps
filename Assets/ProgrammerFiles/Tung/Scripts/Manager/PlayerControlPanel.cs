@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 //Client player's central command
-public class PlayerControlPanel : NetworkBehaviour
+public class PlayerControlPanel : TungDoesNetworkingForyou
 {
     /*Data*/
     [SyncVar]

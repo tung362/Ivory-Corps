@@ -17,6 +17,20 @@ public class Cube : MonoBehaviour {
 		
 	}
 
+    private void OnTriggerEnter(Collider other)
+    {
+        
+
+        if (other.tag == "Socket")
+        {
+            CubeSocket c;
+            c = other.GetComponent<CubeSocket>();
+            //currSocket = c.systType;
+        }
+    }
+
+
+
     public void InvokeAnimation(string stateName)
     {
         if (cubeAnimator != null)

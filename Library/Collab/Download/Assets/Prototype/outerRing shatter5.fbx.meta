@@ -1,0 +1,1902 @@
+fileFormatVersion: 2
+guid: 1f531e08a131b854fb539d4f0f7664bb
+timeCreated: 1487207489
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: outer_ring_PIECE0
+    100002: outer_ring_PIECE1
+    100004: outer_ring_PIECE10
+    100006: outer_ring_PIECE100
+    100008: outer_ring_PIECE101
+    100010: outer_ring_PIECE102
+    100012: outer_ring_PIECE103
+    100014: outer_ring_PIECE104
+    100016: outer_ring_PIECE105
+    100018: outer_ring_PIECE106
+    100020: outer_ring_PIECE107
+    100022: outer_ring_PIECE108
+    100024: outer_ring_PIECE109
+    100026: outer_ring_PIECE11
+    100028: outer_ring_PIECE110
+    100030: outer_ring_PIECE111
+    100032: outer_ring_PIECE112
+    100034: outer_ring_PIECE113
+    100036: outer_ring_PIECE114
+    100038: outer_ring_PIECE115
+    100040: outer_ring_PIECE116
+    100042: outer_ring_PIECE117
+    100044: outer_ring_PIECE118
+    100046: outer_ring_PIECE119
+    100048: outer_ring_PIECE12
+    100050: outer_ring_PIECE120
+    100052: outer_ring_PIECE121
+    100054: outer_ring_PIECE122
+    100056: outer_ring_PIECE123
+    100058: outer_ring_PIECE124
+    100060: outer_ring_PIECE125
+    100062: outer_ring_PIECE126
+    100064: outer_ring_PIECE127
+    100066: outer_ring_PIECE128
+    100068: outer_ring_PIECE129
+    100070: outer_ring_PIECE13
+    100072: outer_ring_PIECE130
+    100074: outer_ring_PIECE131
+    100076: outer_ring_PIECE132
+    100078: outer_ring_PIECE133
+    100080: outer_ring_PIECE134
+    100082: outer_ring_PIECE135
+    100084: outer_ring_PIECE136
+    100086: outer_ring_PIECE137
+    100088: outer_ring_PIECE138
+    100090: outer_ring_PIECE139
+    100092: outer_ring_PIECE14
+    100094: outer_ring_PIECE140
+    100096: outer_ring_PIECE141
+    100098: outer_ring_PIECE142
+    100100: outer_ring_PIECE143
+    100102: outer_ring_PIECE144
+    100104: outer_ring_PIECE145
+    100106: outer_ring_PIECE146
+    100108: outer_ring_PIECE147
+    100110: outer_ring_PIECE148
+    100112: outer_ring_PIECE149
+    100114: outer_ring_PIECE15
+    100116: outer_ring_PIECE150
+    100118: outer_ring_PIECE151
+    100120: outer_ring_PIECE152
+    100122: outer_ring_PIECE153
+    100124: outer_ring_PIECE154
+    100126: outer_ring_PIECE155
+    100128: outer_ring_PIECE156
+    100130: outer_ring_PIECE157
+    100132: outer_ring_PIECE158
+    100134: outer_ring_PIECE159
+    100136: outer_ring_PIECE16
+    100138: outer_ring_PIECE160
+    100140: outer_ring_PIECE161
+    100142: outer_ring_PIECE162
+    100144: outer_ring_PIECE163
+    100146: outer_ring_PIECE164
+    100148: outer_ring_PIECE165
+    100150: outer_ring_PIECE166
+    100152: outer_ring_PIECE167
+    100154: outer_ring_PIECE168
+    100156: outer_ring_PIECE169
+    100158: outer_ring_PIECE17
+    100160: outer_ring_PIECE170
+    100162: outer_ring_PIECE171
+    100164: outer_ring_PIECE172
+    100166: outer_ring_PIECE173
+    100168: outer_ring_PIECE174
+    100170: outer_ring_PIECE175
+    100172: outer_ring_PIECE176
+    100174: outer_ring_PIECE177
+    100176: outer_ring_PIECE178
+    100178: outer_ring_PIECE179
+    100180: outer_ring_PIECE18
+    100182: outer_ring_PIECE180
+    100184: outer_ring_PIECE181
+    100186: outer_ring_PIECE182
+    100188: outer_ring_PIECE183
+    100190: outer_ring_PIECE184
+    100192: outer_ring_PIECE185
+    100194: outer_ring_PIECE186
+    100196: outer_ring_PIECE187
+    100198: outer_ring_PIECE188
+    100200: outer_ring_PIECE189
+    100202: outer_ring_PIECE19
+    100204: outer_ring_PIECE190
+    100206: outer_ring_PIECE191
+    100208: outer_ring_PIECE192
+    100210: outer_ring_PIECE193
+    100212: outer_ring_PIECE194
+    100214: outer_ring_PIECE195
+    100216: outer_ring_PIECE196
+    100218: outer_ring_PIECE197
+    100220: outer_ring_PIECE198
+    100222: outer_ring_PIECE199
+    100224: outer_ring_PIECE2
+    100226: outer_ring_PIECE20
+    100228: outer_ring_PIECE200
+    100230: outer_ring_PIECE201
+    100232: outer_ring_PIECE202
+    100234: outer_ring_PIECE203
+    100236: outer_ring_PIECE204
+    100238: outer_ring_PIECE205
+    100240: outer_ring_PIECE206
+    100242: outer_ring_PIECE207
+    100244: outer_ring_PIECE208
+    100246: outer_ring_PIECE209
+    100248: outer_ring_PIECE21
+    100250: outer_ring_PIECE210
+    100252: outer_ring_PIECE211
+    100254: outer_ring_PIECE212
+    100256: outer_ring_PIECE213
+    100258: outer_ring_PIECE214
+    100260: outer_ring_PIECE215
+    100262: outer_ring_PIECE216
+    100264: outer_ring_PIECE217
+    100266: outer_ring_PIECE218
+    100268: outer_ring_PIECE219
+    100270: outer_ring_PIECE22
+    100272: outer_ring_PIECE220
+    100274: outer_ring_PIECE221
+    100276: outer_ring_PIECE222
+    100278: outer_ring_PIECE223
+    100280: outer_ring_PIECE224
+    100282: outer_ring_PIECE225
+    100284: outer_ring_PIECE226
+    100286: outer_ring_PIECE227
+    100288: outer_ring_PIECE228
+    100290: outer_ring_PIECE229
+    100292: outer_ring_PIECE23
+    100294: outer_ring_PIECE230
+    100296: outer_ring_PIECE231
+    100298: outer_ring_PIECE232
+    100300: outer_ring_PIECE233
+    100302: outer_ring_PIECE234
+    100304: outer_ring_PIECE235
+    100306: outer_ring_PIECE236
+    100308: outer_ring_PIECE237
+    100310: outer_ring_PIECE238
+    100312: outer_ring_PIECE239
+    100314: outer_ring_PIECE24
+    100316: outer_ring_PIECE240
+    100318: outer_ring_PIECE241
+    100320: outer_ring_PIECE242
+    100322: outer_ring_PIECE243
+    100324: outer_ring_PIECE244
+    100326: outer_ring_PIECE245
+    100328: outer_ring_PIECE246
+    100330: outer_ring_PIECE247
+    100332: outer_ring_PIECE248
+    100334: outer_ring_PIECE249
+    100336: outer_ring_PIECE25
+    100338: outer_ring_PIECE250
+    100340: outer_ring_PIECE251
+    100342: outer_ring_PIECE252
+    100344: outer_ring_PIECE253
+    100346: outer_ring_PIECE254
+    100348: outer_ring_PIECE255
+    100350: outer_ring_PIECE26
+    100352: outer_ring_PIECE27
+    100354: outer_ring_PIECE28
+    100356: outer_ring_PIECE29
+    100358: outer_ring_PIECE3
+    100360: outer_ring_PIECE30
+    100362: outer_ring_PIECE31
+    100364: outer_ring_PIECE32
+    100366: outer_ring_PIECE33
+    100368: outer_ring_PIECE34
+    100370: outer_ring_PIECE35
+    100372: outer_ring_PIECE36
+    100374: outer_ring_PIECE37
+    100376: outer_ring_PIECE38
+    100378: outer_ring_PIECE39
+    100380: outer_ring_PIECE4
+    100382: outer_ring_PIECE40
+    100384: outer_ring_PIECE41
+    100386: outer_ring_PIECE42
+    100388: outer_ring_PIECE43
+    100390: outer_ring_PIECE44
+    100392: outer_ring_PIECE45
+    100394: outer_ring_PIECE46
+    100396: outer_ring_PIECE47
+    100398: outer_ring_PIECE48
+    100400: outer_ring_PIECE49
+    100402: outer_ring_PIECE5
+    100404: outer_ring_PIECE50
+    100406: outer_ring_PIECE51
+    100408: outer_ring_PIECE52
+    100410: outer_ring_PIECE53
+    100412: outer_ring_PIECE54
+    100414: outer_ring_PIECE55
+    100416: outer_ring_PIECE56
+    100418: outer_ring_PIECE57
+    100420: outer_ring_PIECE58
+    100422: outer_ring_PIECE59
+    100424: outer_ring_PIECE6
+    100426: outer_ring_PIECE60
+    100428: outer_ring_PIECE61
+    100430: outer_ring_PIECE62
+    100432: outer_ring_PIECE63
+    100434: outer_ring_PIECE64
+    100436: outer_ring_PIECE65
+    100438: outer_ring_PIECE66
+    100440: outer_ring_PIECE67
+    100442: outer_ring_PIECE68
+    100444: outer_ring_PIECE69
+    100446: outer_ring_PIECE7
+    100448: outer_ring_PIECE70
+    100450: outer_ring_PIECE71
+    100452: outer_ring_PIECE72
+    100454: outer_ring_PIECE73
+    100456: outer_ring_PIECE74
+    100458: outer_ring_PIECE75
+    100460: outer_ring_PIECE76
+    100462: outer_ring_PIECE77
+    100464: outer_ring_PIECE78
+    100466: outer_ring_PIECE79
+    100468: outer_ring_PIECE8
+    100470: outer_ring_PIECE80
+    100472: outer_ring_PIECE81
+    100474: outer_ring_PIECE82
+    100476: outer_ring_PIECE83
+    100478: outer_ring_PIECE84
+    100480: outer_ring_PIECE85
+    100482: outer_ring_PIECE86
+    100484: outer_ring_PIECE87
+    100486: outer_ring_PIECE88
+    100488: outer_ring_PIECE89
+    100490: outer_ring_PIECE9
+    100492: outer_ring_PIECE90
+    100494: outer_ring_PIECE91
+    100496: outer_ring_PIECE92
+    100498: outer_ring_PIECE93
+    100500: outer_ring_PIECE94
+    100502: outer_ring_PIECE95
+    100504: outer_ring_PIECE96
+    100506: outer_ring_PIECE97
+    100508: outer_ring_PIECE98
+    100510: outer_ring_PIECE99
+    100512: //RootNode
+    400000: outer_ring_PIECE0
+    400002: outer_ring_PIECE1
+    400004: outer_ring_PIECE10
+    400006: outer_ring_PIECE100
+    400008: outer_ring_PIECE101
+    400010: outer_ring_PIECE102
+    400012: outer_ring_PIECE103
+    400014: outer_ring_PIECE104
+    400016: outer_ring_PIECE105
+    400018: outer_ring_PIECE106
+    400020: outer_ring_PIECE107
+    400022: outer_ring_PIECE108
+    400024: outer_ring_PIECE109
+    400026: outer_ring_PIECE11
+    400028: outer_ring_PIECE110
+    400030: outer_ring_PIECE111
+    400032: outer_ring_PIECE112
+    400034: outer_ring_PIECE113
+    400036: outer_ring_PIECE114
+    400038: outer_ring_PIECE115
+    400040: outer_ring_PIECE116
+    400042: outer_ring_PIECE117
+    400044: outer_ring_PIECE118
+    400046: outer_ring_PIECE119
+    400048: outer_ring_PIECE12
+    400050: outer_ring_PIECE120
+    400052: outer_ring_PIECE121
+    400054: outer_ring_PIECE122
+    400056: outer_ring_PIECE123
+    400058: outer_ring_PIECE124
+    400060: outer_ring_PIECE125
+    400062: outer_ring_PIECE126
+    400064: outer_ring_PIECE127
+    400066: outer_ring_PIECE128
+    400068: outer_ring_PIECE129
+    400070: outer_ring_PIECE13
+    400072: outer_ring_PIECE130
+    400074: outer_ring_PIECE131
+    400076: outer_ring_PIECE132
+    400078: outer_ring_PIECE133
+    400080: outer_ring_PIECE134
+    400082: outer_ring_PIECE135
+    400084: outer_ring_PIECE136
+    400086: outer_ring_PIECE137
+    400088: outer_ring_PIECE138
+    400090: outer_ring_PIECE139
+    400092: outer_ring_PIECE14
+    400094: outer_ring_PIECE140
+    400096: outer_ring_PIECE141
+    400098: outer_ring_PIECE142
+    400100: outer_ring_PIECE143
+    400102: outer_ring_PIECE144
+    400104: outer_ring_PIECE145
+    400106: outer_ring_PIECE146
+    400108: outer_ring_PIECE147
+    400110: outer_ring_PIECE148
+    400112: outer_ring_PIECE149
+    400114: outer_ring_PIECE15
+    400116: outer_ring_PIECE150
+    400118: outer_ring_PIECE151
+    400120: outer_ring_PIECE152
+    400122: outer_ring_PIECE153
+    400124: outer_ring_PIECE154
+    400126: outer_ring_PIECE155
+    400128: outer_ring_PIECE156
+    400130: outer_ring_PIECE157
+    400132: outer_ring_PIECE158
+    400134: outer_ring_PIECE159
+    400136: outer_ring_PIECE16
+    400138: outer_ring_PIECE160
+    400140: outer_ring_PIECE161
+    400142: outer_ring_PIECE162
+    400144: outer_ring_PIECE163
+    400146: outer_ring_PIECE164
+    400148: outer_ring_PIECE165
+    400150: outer_ring_PIECE166
+    400152: outer_ring_PIECE167
+    400154: outer_ring_PIECE168
+    400156: outer_ring_PIECE169
+    400158: outer_ring_PIECE17
+    400160: outer_ring_PIECE170
+    400162: outer_ring_PIECE171
+    400164: outer_ring_PIECE172
+    400166: outer_ring_PIECE173
+    400168: outer_ring_PIECE174
+    400170: outer_ring_PIECE175
+    400172: outer_ring_PIECE176
+    400174: outer_ring_PIECE177
+    400176: outer_ring_PIECE178
+    400178: outer_ring_PIECE179
+    400180: outer_ring_PIECE18
+    400182: outer_ring_PIECE180
+    400184: outer_ring_PIECE181
+    400186: outer_ring_PIECE182
+    400188: outer_ring_PIECE183
+    400190: outer_ring_PIECE184
+    400192: outer_ring_PIECE185
+    400194: outer_ring_PIECE186
+    400196: outer_ring_PIECE187
+    400198: outer_ring_PIECE188
+    400200: outer_ring_PIECE189
+    400202: outer_ring_PIECE19
+    400204: outer_ring_PIECE190
+    400206: outer_ring_PIECE191
+    400208: outer_ring_PIECE192
+    400210: outer_ring_PIECE193
+    400212: outer_ring_PIECE194
+    400214: outer_ring_PIECE195
+    400216: outer_ring_PIECE196
+    400218: outer_ring_PIECE197
+    400220: outer_ring_PIECE198
+    400222: outer_ring_PIECE199
+    400224: outer_ring_PIECE2
+    400226: outer_ring_PIECE20
+    400228: outer_ring_PIECE200
+    400230: outer_ring_PIECE201
+    400232: outer_ring_PIECE202
+    400234: outer_ring_PIECE203
+    400236: outer_ring_PIECE204
+    400238: outer_ring_PIECE205
+    400240: outer_ring_PIECE206
+    400242: outer_ring_PIECE207
+    400244: outer_ring_PIECE208
+    400246: outer_ring_PIECE209
+    400248: outer_ring_PIECE21
+    400250: outer_ring_PIECE210
+    400252: outer_ring_PIECE211
+    400254: outer_ring_PIECE212
+    400256: outer_ring_PIECE213
+    400258: outer_ring_PIECE214
+    400260: outer_ring_PIECE215
+    400262: outer_ring_PIECE216
+    400264: outer_ring_PIECE217
+    400266: outer_ring_PIECE218
+    400268: outer_ring_PIECE219
+    400270: outer_ring_PIECE22
+    400272: outer_ring_PIECE220
+    400274: outer_ring_PIECE221
+    400276: outer_ring_PIECE222
+    400278: outer_ring_PIECE223
+    400280: outer_ring_PIECE224
+    400282: outer_ring_PIECE225
+    400284: outer_ring_PIECE226
+    400286: outer_ring_PIECE227
+    400288: outer_ring_PIECE228
+    400290: outer_ring_PIECE229
+    400292: outer_ring_PIECE23
+    400294: outer_ring_PIECE230
+    400296: outer_ring_PIECE231
+    400298: outer_ring_PIECE232
+    400300: outer_ring_PIECE233
+    400302: outer_ring_PIECE234
+    400304: outer_ring_PIECE235
+    400306: outer_ring_PIECE236
+    400308: outer_ring_PIECE237
+    400310: outer_ring_PIECE238
+    400312: outer_ring_PIECE239
+    400314: outer_ring_PIECE24
+    400316: outer_ring_PIECE240
+    400318: outer_ring_PIECE241
+    400320: outer_ring_PIECE242
+    400322: outer_ring_PIECE243
+    400324: outer_ring_PIECE244
+    400326: outer_ring_PIECE245
+    400328: outer_ring_PIECE246
+    400330: outer_ring_PIECE247
+    400332: outer_ring_PIECE248
+    400334: outer_ring_PIECE249
+    400336: outer_ring_PIECE25
+    400338: outer_ring_PIECE250
+    400340: outer_ring_PIECE251
+    400342: outer_ring_PIECE252
+    400344: outer_ring_PIECE253
+    400346: outer_ring_PIECE254
+    400348: outer_ring_PIECE255
+    400350: outer_ring_PIECE26
+    400352: outer_ring_PIECE27
+    400354: outer_ring_PIECE28
+    400356: outer_ring_PIECE29
+    400358: outer_ring_PIECE3
+    400360: outer_ring_PIECE30
+    400362: outer_ring_PIECE31
+    400364: outer_ring_PIECE32
+    400366: outer_ring_PIECE33
+    400368: outer_ring_PIECE34
+    400370: outer_ring_PIECE35
+    400372: outer_ring_PIECE36
+    400374: outer_ring_PIECE37
+    400376: outer_ring_PIECE38
+    400378: outer_ring_PIECE39
+    400380: outer_ring_PIECE4
+    400382: outer_ring_PIECE40
+    400384: outer_ring_PIECE41
+    400386: outer_ring_PIECE42
+    400388: outer_ring_PIECE43
+    400390: outer_ring_PIECE44
+    400392: outer_ring_PIECE45
+    400394: outer_ring_PIECE46
+    400396: outer_ring_PIECE47
+    400398: outer_ring_PIECE48
+    400400: outer_ring_PIECE49
+    400402: outer_ring_PIECE5
+    400404: outer_ring_PIECE50
+    400406: outer_ring_PIECE51
+    400408: outer_ring_PIECE52
+    400410: outer_ring_PIECE53
+    400412: outer_ring_PIECE54
+    400414: outer_ring_PIECE55
+    400416: outer_ring_PIECE56
+    400418: outer_ring_PIECE57
+    400420: outer_ring_PIECE58
+    400422: outer_ring_PIECE59
+    400424: outer_ring_PIECE6
+    400426: outer_ring_PIECE60
+    400428: outer_ring_PIECE61
+    400430: outer_ring_PIECE62
+    400432: outer_ring_PIECE63
+    400434: outer_ring_PIECE64
+    400436: outer_ring_PIECE65
+    400438: outer_ring_PIECE66
+    400440: outer_ring_PIECE67
+    400442: outer_ring_PIECE68
+    400444: outer_ring_PIECE69
+    400446: outer_ring_PIECE7
+    400448: outer_ring_PIECE70
+    400450: outer_ring_PIECE71
+    400452: outer_ring_PIECE72
+    400454: outer_ring_PIECE73
+    400456: outer_ring_PIECE74
+    400458: outer_ring_PIECE75
+    400460: outer_ring_PIECE76
+    400462: outer_ring_PIECE77
+    400464: outer_ring_PIECE78
+    400466: outer_ring_PIECE79
+    400468: outer_ring_PIECE8
+    400470: outer_ring_PIECE80
+    400472: outer_ring_PIECE81
+    400474: outer_ring_PIECE82
+    400476: outer_ring_PIECE83
+    400478: outer_ring_PIECE84
+    400480: outer_ring_PIECE85
+    400482: outer_ring_PIECE86
+    400484: outer_ring_PIECE87
+    400486: outer_ring_PIECE88
+    400488: outer_ring_PIECE89
+    400490: outer_ring_PIECE9
+    400492: outer_ring_PIECE90
+    400494: outer_ring_PIECE91
+    400496: outer_ring_PIECE92
+    400498: outer_ring_PIECE93
+    400500: outer_ring_PIECE94
+    400502: outer_ring_PIECE95
+    400504: outer_ring_PIECE96
+    400506: outer_ring_PIECE97
+    400508: outer_ring_PIECE98
+    400510: outer_ring_PIECE99
+    400512: //RootNode
+    2300000: outer_ring_PIECE0
+    2300002: outer_ring_PIECE1
+    2300004: outer_ring_PIECE10
+    2300006: outer_ring_PIECE100
+    2300008: outer_ring_PIECE101
+    2300010: outer_ring_PIECE102
+    2300012: outer_ring_PIECE103
+    2300014: outer_ring_PIECE104
+    2300016: outer_ring_PIECE105
+    2300018: outer_ring_PIECE106
+    2300020: outer_ring_PIECE107
+    2300022: outer_ring_PIECE108
+    2300024: outer_ring_PIECE109
+    2300026: outer_ring_PIECE11
+    2300028: outer_ring_PIECE110
+    2300030: outer_ring_PIECE111
+    2300032: outer_ring_PIECE112
+    2300034: outer_ring_PIECE113
+    2300036: outer_ring_PIECE114
+    2300038: outer_ring_PIECE115
+    2300040: outer_ring_PIECE116
+    2300042: outer_ring_PIECE117
+    2300044: outer_ring_PIECE118
+    2300046: outer_ring_PIECE119
+    2300048: outer_ring_PIECE12
+    2300050: outer_ring_PIECE120
+    2300052: outer_ring_PIECE121
+    2300054: outer_ring_PIECE122
+    2300056: outer_ring_PIECE123
+    2300058: outer_ring_PIECE124
+    2300060: outer_ring_PIECE125
+    2300062: outer_ring_PIECE126
+    2300064: outer_ring_PIECE127
+    2300066: outer_ring_PIECE128
+    2300068: outer_ring_PIECE129
+    2300070: outer_ring_PIECE13
+    2300072: outer_ring_PIECE130
+    2300074: outer_ring_PIECE131
+    2300076: outer_ring_PIECE132
+    2300078: outer_ring_PIECE133
+    2300080: outer_ring_PIECE134
+    2300082: outer_ring_PIECE135
+    2300084: outer_ring_PIECE136
+    2300086: outer_ring_PIECE137
+    2300088: outer_ring_PIECE138
+    2300090: outer_ring_PIECE139
+    2300092: outer_ring_PIECE14
+    2300094: outer_ring_PIECE140
+    2300096: outer_ring_PIECE141
+    2300098: outer_ring_PIECE142
+    2300100: outer_ring_PIECE143
+    2300102: outer_ring_PIECE144
+    2300104: outer_ring_PIECE145
+    2300106: outer_ring_PIECE146
+    2300108: outer_ring_PIECE147
+    2300110: outer_ring_PIECE148
+    2300112: outer_ring_PIECE149
+    2300114: outer_ring_PIECE15
+    2300116: outer_ring_PIECE150
+    2300118: outer_ring_PIECE151
+    2300120: outer_ring_PIECE152
+    2300122: outer_ring_PIECE153
+    2300124: outer_ring_PIECE154
+    2300126: outer_ring_PIECE155
+    2300128: outer_ring_PIECE156
+    2300130: outer_ring_PIECE157
+    2300132: outer_ring_PIECE158
+    2300134: outer_ring_PIECE159
+    2300136: outer_ring_PIECE16
+    2300138: outer_ring_PIECE160
+    2300140: outer_ring_PIECE161
+    2300142: outer_ring_PIECE162
+    2300144: outer_ring_PIECE163
+    2300146: outer_ring_PIECE164
+    2300148: outer_ring_PIECE165
+    2300150: outer_ring_PIECE166
+    2300152: outer_ring_PIECE167
+    2300154: outer_ring_PIECE168
+    2300156: outer_ring_PIECE169
+    2300158: outer_ring_PIECE17
+    2300160: outer_ring_PIECE170
+    2300162: outer_ring_PIECE171
+    2300164: outer_ring_PIECE172
+    2300166: outer_ring_PIECE173
+    2300168: outer_ring_PIECE174
+    2300170: outer_ring_PIECE175
+    2300172: outer_ring_PIECE176
+    2300174: outer_ring_PIECE177
+    2300176: outer_ring_PIECE178
+    2300178: outer_ring_PIECE179
+    2300180: outer_ring_PIECE18
+    2300182: outer_ring_PIECE180
+    2300184: outer_ring_PIECE181
+    2300186: outer_ring_PIECE182
+    2300188: outer_ring_PIECE183
+    2300190: outer_ring_PIECE184
+    2300192: outer_ring_PIECE185
+    2300194: outer_ring_PIECE186
+    2300196: outer_ring_PIECE187
+    2300198: outer_ring_PIECE188
+    2300200: outer_ring_PIECE189
+    2300202: outer_ring_PIECE19
+    2300204: outer_ring_PIECE190
+    2300206: outer_ring_PIECE191
+    2300208: outer_ring_PIECE192
+    2300210: outer_ring_PIECE193
+    2300212: outer_ring_PIECE194
+    2300214: outer_ring_PIECE195
+    2300216: outer_ring_PIECE196
+    2300218: outer_ring_PIECE197
+    2300220: outer_ring_PIECE198
+    2300222: outer_ring_PIECE199
+    2300224: outer_ring_PIECE2
+    2300226: outer_ring_PIECE20
+    2300228: outer_ring_PIECE200
+    2300230: outer_ring_PIECE201
+    2300232: outer_ring_PIECE202
+    2300234: outer_ring_PIECE203
+    2300236: outer_ring_PIECE204
+    2300238: outer_ring_PIECE205
+    2300240: outer_ring_PIECE206
+    2300242: outer_ring_PIECE207
+    2300244: outer_ring_PIECE208
+    2300246: outer_ring_PIECE209
+    2300248: outer_ring_PIECE21
+    2300250: outer_ring_PIECE210
+    2300252: outer_ring_PIECE211
+    2300254: outer_ring_PIECE212
+    2300256: outer_ring_PIECE213
+    2300258: outer_ring_PIECE214
+    2300260: outer_ring_PIECE215
+    2300262: outer_ring_PIECE216
+    2300264: outer_ring_PIECE217
+    2300266: outer_ring_PIECE218
+    2300268: outer_ring_PIECE219
+    2300270: outer_ring_PIECE22
+    2300272: outer_ring_PIECE220
+    2300274: outer_ring_PIECE221
+    2300276: outer_ring_PIECE222
+    2300278: outer_ring_PIECE223
+    2300280: outer_ring_PIECE224
+    2300282: outer_ring_PIECE225
+    2300284: outer_ring_PIECE226
+    2300286: outer_ring_PIECE227
+    2300288: outer_ring_PIECE228
+    2300290: outer_ring_PIECE229
+    2300292: outer_ring_PIECE23
+    2300294: outer_ring_PIECE230
+    2300296: outer_ring_PIECE231
+    2300298: outer_ring_PIECE232
+    2300300: outer_ring_PIECE233
+    2300302: outer_ring_PIECE234
+    2300304: outer_ring_PIECE235
+    2300306: outer_ring_PIECE236
+    2300308: outer_ring_PIECE237
+    2300310: outer_ring_PIECE238
+    2300312: outer_ring_PIECE239
+    2300314: outer_ring_PIECE24
+    2300316: outer_ring_PIECE240
+    2300318: outer_ring_PIECE241
+    2300320: outer_ring_PIECE242
+    2300322: outer_ring_PIECE243
+    2300324: outer_ring_PIECE244
+    2300326: outer_ring_PIECE245
+    2300328: outer_ring_PIECE246
+    2300330: outer_ring_PIECE247
+    2300332: outer_ring_PIECE248
+    2300334: outer_ring_PIECE249
+    2300336: outer_ring_PIECE25
+    2300338: outer_ring_PIECE250
+    2300340: outer_ring_PIECE251
+    2300342: outer_ring_PIECE252
+    2300344: outer_ring_PIECE253
+    2300346: outer_ring_PIECE254
+    2300348: outer_ring_PIECE255
+    2300350: outer_ring_PIECE26
+    2300352: outer_ring_PIECE27
+    2300354: outer_ring_PIECE28
+    2300356: outer_ring_PIECE29
+    2300358: outer_ring_PIECE3
+    2300360: outer_ring_PIECE30
+    2300362: outer_ring_PIECE31
+    2300364: outer_ring_PIECE32
+    2300366: outer_ring_PIECE33
+    2300368: outer_ring_PIECE34
+    2300370: outer_ring_PIECE35
+    2300372: outer_ring_PIECE36
+    2300374: outer_ring_PIECE37
+    2300376: outer_ring_PIECE38
+    2300378: outer_ring_PIECE39
+    2300380: outer_ring_PIECE4
+    2300382: outer_ring_PIECE40
+    2300384: outer_ring_PIECE41
+    2300386: outer_ring_PIECE42
+    2300388: outer_ring_PIECE43
+    2300390: outer_ring_PIECE44
+    2300392: outer_ring_PIECE45
+    2300394: outer_ring_PIECE46
+    2300396: outer_ring_PIECE47
+    2300398: outer_ring_PIECE48
+    2300400: outer_ring_PIECE49
+    2300402: outer_ring_PIECE5
+    2300404: outer_ring_PIECE50
+    2300406: outer_ring_PIECE51
+    2300408: outer_ring_PIECE52
+    2300410: outer_ring_PIECE53
+    2300412: outer_ring_PIECE54
+    2300414: outer_ring_PIECE55
+    2300416: outer_ring_PIECE56
+    2300418: outer_ring_PIECE57
+    2300420: outer_ring_PIECE58
+    2300422: outer_ring_PIECE59
+    2300424: outer_ring_PIECE6
+    2300426: outer_ring_PIECE60
+    2300428: outer_ring_PIECE61
+    2300430: outer_ring_PIECE62
+    2300432: outer_ring_PIECE63
+    2300434: outer_ring_PIECE64
+    2300436: outer_ring_PIECE65
+    2300438: outer_ring_PIECE66
+    2300440: outer_ring_PIECE67
+    2300442: outer_ring_PIECE68
+    2300444: outer_ring_PIECE69
+    2300446: outer_ring_PIECE7
+    2300448: outer_ring_PIECE70
+    2300450: outer_ring_PIECE71
+    2300452: outer_ring_PIECE72
+    2300454: outer_ring_PIECE73
+    2300456: outer_ring_PIECE74
+    2300458: outer_ring_PIECE75
+    2300460: outer_ring_PIECE76
+    2300462: outer_ring_PIECE77
+    2300464: outer_ring_PIECE78
+    2300466: outer_ring_PIECE79
+    2300468: outer_ring_PIECE8
+    2300470: outer_ring_PIECE80
+    2300472: outer_ring_PIECE81
+    2300474: outer_ring_PIECE82
+    2300476: outer_ring_PIECE83
+    2300478: outer_ring_PIECE84
+    2300480: outer_ring_PIECE85
+    2300482: outer_ring_PIECE86
+    2300484: outer_ring_PIECE87
+    2300486: outer_ring_PIECE88
+    2300488: outer_ring_PIECE89
+    2300490: outer_ring_PIECE9
+    2300492: outer_ring_PIECE90
+    2300494: outer_ring_PIECE91
+    2300496: outer_ring_PIECE92
+    2300498: outer_ring_PIECE93
+    2300500: outer_ring_PIECE94
+    2300502: outer_ring_PIECE95
+    2300504: outer_ring_PIECE96
+    2300506: outer_ring_PIECE97
+    2300508: outer_ring_PIECE98
+    2300510: outer_ring_PIECE99
+    3300000: outer_ring_PIECE0
+    3300002: outer_ring_PIECE1
+    3300004: outer_ring_PIECE10
+    3300006: outer_ring_PIECE100
+    3300008: outer_ring_PIECE101
+    3300010: outer_ring_PIECE102
+    3300012: outer_ring_PIECE103
+    3300014: outer_ring_PIECE104
+    3300016: outer_ring_PIECE105
+    3300018: outer_ring_PIECE106
+    3300020: outer_ring_PIECE107
+    3300022: outer_ring_PIECE108
+    3300024: outer_ring_PIECE109
+    3300026: outer_ring_PIECE11
+    3300028: outer_ring_PIECE110
+    3300030: outer_ring_PIECE111
+    3300032: outer_ring_PIECE112
+    3300034: outer_ring_PIECE113
+    3300036: outer_ring_PIECE114
+    3300038: outer_ring_PIECE115
+    3300040: outer_ring_PIECE116
+    3300042: outer_ring_PIECE117
+    3300044: outer_ring_PIECE118
+    3300046: outer_ring_PIECE119
+    3300048: outer_ring_PIECE12
+    3300050: outer_ring_PIECE120
+    3300052: outer_ring_PIECE121
+    3300054: outer_ring_PIECE122
+    3300056: outer_ring_PIECE123
+    3300058: outer_ring_PIECE124
+    3300060: outer_ring_PIECE125
+    3300062: outer_ring_PIECE126
+    3300064: outer_ring_PIECE127
+    3300066: outer_ring_PIECE128
+    3300068: outer_ring_PIECE129
+    3300070: outer_ring_PIECE13
+    3300072: outer_ring_PIECE130
+    3300074: outer_ring_PIECE131
+    3300076: outer_ring_PIECE132
+    3300078: outer_ring_PIECE133
+    3300080: outer_ring_PIECE134
+    3300082: outer_ring_PIECE135
+    3300084: outer_ring_PIECE136
+    3300086: outer_ring_PIECE137
+    3300088: outer_ring_PIECE138
+    3300090: outer_ring_PIECE139
+    3300092: outer_ring_PIECE14
+    3300094: outer_ring_PIECE140
+    3300096: outer_ring_PIECE141
+    3300098: outer_ring_PIECE142
+    3300100: outer_ring_PIECE143
+    3300102: outer_ring_PIECE144
+    3300104: outer_ring_PIECE145
+    3300106: outer_ring_PIECE146
+    3300108: outer_ring_PIECE147
+    3300110: outer_ring_PIECE148
+    3300112: outer_ring_PIECE149
+    3300114: outer_ring_PIECE15
+    3300116: outer_ring_PIECE150
+    3300118: outer_ring_PIECE151
+    3300120: outer_ring_PIECE152
+    3300122: outer_ring_PIECE153
+    3300124: outer_ring_PIECE154
+    3300126: outer_ring_PIECE155
+    3300128: outer_ring_PIECE156
+    3300130: outer_ring_PIECE157
+    3300132: outer_ring_PIECE158
+    3300134: outer_ring_PIECE159
+    3300136: outer_ring_PIECE16
+    3300138: outer_ring_PIECE160
+    3300140: outer_ring_PIECE161
+    3300142: outer_ring_PIECE162
+    3300144: outer_ring_PIECE163
+    3300146: outer_ring_PIECE164
+    3300148: outer_ring_PIECE165
+    3300150: outer_ring_PIECE166
+    3300152: outer_ring_PIECE167
+    3300154: outer_ring_PIECE168
+    3300156: outer_ring_PIECE169
+    3300158: outer_ring_PIECE17
+    3300160: outer_ring_PIECE170
+    3300162: outer_ring_PIECE171
+    3300164: outer_ring_PIECE172
+    3300166: outer_ring_PIECE173
+    3300168: outer_ring_PIECE174
+    3300170: outer_ring_PIECE175
+    3300172: outer_ring_PIECE176
+    3300174: outer_ring_PIECE177
+    3300176: outer_ring_PIECE178
+    3300178: outer_ring_PIECE179
+    3300180: outer_ring_PIECE18
+    3300182: outer_ring_PIECE180
+    3300184: outer_ring_PIECE181
+    3300186: outer_ring_PIECE182
+    3300188: outer_ring_PIECE183
+    3300190: outer_ring_PIECE184
+    3300192: outer_ring_PIECE185
+    3300194: outer_ring_PIECE186
+    3300196: outer_ring_PIECE187
+    3300198: outer_ring_PIECE188
+    3300200: outer_ring_PIECE189
+    3300202: outer_ring_PIECE19
+    3300204: outer_ring_PIECE190
+    3300206: outer_ring_PIECE191
+    3300208: outer_ring_PIECE192
+    3300210: outer_ring_PIECE193
+    3300212: outer_ring_PIECE194
+    3300214: outer_ring_PIECE195
+    3300216: outer_ring_PIECE196
+    3300218: outer_ring_PIECE197
+    3300220: outer_ring_PIECE198
+    3300222: outer_ring_PIECE199
+    3300224: outer_ring_PIECE2
+    3300226: outer_ring_PIECE20
+    3300228: outer_ring_PIECE200
+    3300230: outer_ring_PIECE201
+    3300232: outer_ring_PIECE202
+    3300234: outer_ring_PIECE203
+    3300236: outer_ring_PIECE204
+    3300238: outer_ring_PIECE205
+    3300240: outer_ring_PIECE206
+    3300242: outer_ring_PIECE207
+    3300244: outer_ring_PIECE208
+    3300246: outer_ring_PIECE209
+    3300248: outer_ring_PIECE21
+    3300250: outer_ring_PIECE210
+    3300252: outer_ring_PIECE211
+    3300254: outer_ring_PIECE212
+    3300256: outer_ring_PIECE213
+    3300258: outer_ring_PIECE214
+    3300260: outer_ring_PIECE215
+    3300262: outer_ring_PIECE216
+    3300264: outer_ring_PIECE217
+    3300266: outer_ring_PIECE218
+    3300268: outer_ring_PIECE219
+    3300270: outer_ring_PIECE22
+    3300272: outer_ring_PIECE220
+    3300274: outer_ring_PIECE221
+    3300276: outer_ring_PIECE222
+    3300278: outer_ring_PIECE223
+    3300280: outer_ring_PIECE224
+    3300282: outer_ring_PIECE225
+    3300284: outer_ring_PIECE226
+    3300286: outer_ring_PIECE227
+    3300288: outer_ring_PIECE228
+    3300290: outer_ring_PIECE229
+    3300292: outer_ring_PIECE23
+    3300294: outer_ring_PIECE230
+    3300296: outer_ring_PIECE231
+    3300298: outer_ring_PIECE232
+    3300300: outer_ring_PIECE233
+    3300302: outer_ring_PIECE234
+    3300304: outer_ring_PIECE235
+    3300306: outer_ring_PIECE236
+    3300308: outer_ring_PIECE237
+    3300310: outer_ring_PIECE238
+    3300312: outer_ring_PIECE239
+    3300314: outer_ring_PIECE24
+    3300316: outer_ring_PIECE240
+    3300318: outer_ring_PIECE241
+    3300320: outer_ring_PIECE242
+    3300322: outer_ring_PIECE243
+    3300324: outer_ring_PIECE244
+    3300326: outer_ring_PIECE245
+    3300328: outer_ring_PIECE246
+    3300330: outer_ring_PIECE247
+    3300332: outer_ring_PIECE248
+    3300334: outer_ring_PIECE249
+    3300336: outer_ring_PIECE25
+    3300338: outer_ring_PIECE250
+    3300340: outer_ring_PIECE251
+    3300342: outer_ring_PIECE252
+    3300344: outer_ring_PIECE253
+    3300346: outer_ring_PIECE254
+    3300348: outer_ring_PIECE255
+    3300350: outer_ring_PIECE26
+    3300352: outer_ring_PIECE27
+    3300354: outer_ring_PIECE28
+    3300356: outer_ring_PIECE29
+    3300358: outer_ring_PIECE3
+    3300360: outer_ring_PIECE30
+    3300362: outer_ring_PIECE31
+    3300364: outer_ring_PIECE32
+    3300366: outer_ring_PIECE33
+    3300368: outer_ring_PIECE34
+    3300370: outer_ring_PIECE35
+    3300372: outer_ring_PIECE36
+    3300374: outer_ring_PIECE37
+    3300376: outer_ring_PIECE38
+    3300378: outer_ring_PIECE39
+    3300380: outer_ring_PIECE4
+    3300382: outer_ring_PIECE40
+    3300384: outer_ring_PIECE41
+    3300386: outer_ring_PIECE42
+    3300388: outer_ring_PIECE43
+    3300390: outer_ring_PIECE44
+    3300392: outer_ring_PIECE45
+    3300394: outer_ring_PIECE46
+    3300396: outer_ring_PIECE47
+    3300398: outer_ring_PIECE48
+    3300400: outer_ring_PIECE49
+    3300402: outer_ring_PIECE5
+    3300404: outer_ring_PIECE50
+    3300406: outer_ring_PIECE51
+    3300408: outer_ring_PIECE52
+    3300410: outer_ring_PIECE53
+    3300412: outer_ring_PIECE54
+    3300414: outer_ring_PIECE55
+    3300416: outer_ring_PIECE56
+    3300418: outer_ring_PIECE57
+    3300420: outer_ring_PIECE58
+    3300422: outer_ring_PIECE59
+    3300424: outer_ring_PIECE6
+    3300426: outer_ring_PIECE60
+    3300428: outer_ring_PIECE61
+    3300430: outer_ring_PIECE62
+    3300432: outer_ring_PIECE63
+    3300434: outer_ring_PIECE64
+    3300436: outer_ring_PIECE65
+    3300438: outer_ring_PIECE66
+    3300440: outer_ring_PIECE67
+    3300442: outer_ring_PIECE68
+    3300444: outer_ring_PIECE69
+    3300446: outer_ring_PIECE7
+    3300448: outer_ring_PIECE70
+    3300450: outer_ring_PIECE71
+    3300452: outer_ring_PIECE72
+    3300454: outer_ring_PIECE73
+    3300456: outer_ring_PIECE74
+    3300458: outer_ring_PIECE75
+    3300460: outer_ring_PIECE76
+    3300462: outer_ring_PIECE77
+    3300464: outer_ring_PIECE78
+    3300466: outer_ring_PIECE79
+    3300468: outer_ring_PIECE8
+    3300470: outer_ring_PIECE80
+    3300472: outer_ring_PIECE81
+    3300474: outer_ring_PIECE82
+    3300476: outer_ring_PIECE83
+    3300478: outer_ring_PIECE84
+    3300480: outer_ring_PIECE85
+    3300482: outer_ring_PIECE86
+    3300484: outer_ring_PIECE87
+    3300486: outer_ring_PIECE88
+    3300488: outer_ring_PIECE89
+    3300490: outer_ring_PIECE9
+    3300492: outer_ring_PIECE90
+    3300494: outer_ring_PIECE91
+    3300496: outer_ring_PIECE92
+    3300498: outer_ring_PIECE93
+    3300500: outer_ring_PIECE94
+    3300502: outer_ring_PIECE95
+    3300504: outer_ring_PIECE96
+    3300506: outer_ring_PIECE97
+    3300508: outer_ring_PIECE98
+    3300510: outer_ring_PIECE99
+    4300000: outer_ring_PIECE0
+    4300002: outer_ring_PIECE1
+    4300004: outer_ring_PIECE2
+    4300006: outer_ring_PIECE3
+    4300008: outer_ring_PIECE4
+    4300010: outer_ring_PIECE5
+    4300012: outer_ring_PIECE6
+    4300014: outer_ring_PIECE7
+    4300016: outer_ring_PIECE8
+    4300018: outer_ring_PIECE9
+    4300020: outer_ring_PIECE10
+    4300022: outer_ring_PIECE11
+    4300024: outer_ring_PIECE12
+    4300026: outer_ring_PIECE13
+    4300028: outer_ring_PIECE14
+    4300030: outer_ring_PIECE15
+    4300032: outer_ring_PIECE16
+    4300034: outer_ring_PIECE17
+    4300036: outer_ring_PIECE18
+    4300038: outer_ring_PIECE19
+    4300040: outer_ring_PIECE20
+    4300042: outer_ring_PIECE21
+    4300044: outer_ring_PIECE22
+    4300046: outer_ring_PIECE23
+    4300048: outer_ring_PIECE24
+    4300050: outer_ring_PIECE25
+    4300052: outer_ring_PIECE26
+    4300054: outer_ring_PIECE27
+    4300056: outer_ring_PIECE28
+    4300058: outer_ring_PIECE29
+    4300060: outer_ring_PIECE30
+    4300062: outer_ring_PIECE31
+    4300064: outer_ring_PIECE32
+    4300066: outer_ring_PIECE33
+    4300068: outer_ring_PIECE34
+    4300070: outer_ring_PIECE35
+    4300072: outer_ring_PIECE36
+    4300074: outer_ring_PIECE37
+    4300076: outer_ring_PIECE38
+    4300078: outer_ring_PIECE39
+    4300080: outer_ring_PIECE40
+    4300082: outer_ring_PIECE41
+    4300084: outer_ring_PIECE42
+    4300086: outer_ring_PIECE43
+    4300088: outer_ring_PIECE44
+    4300090: outer_ring_PIECE45
+    4300092: outer_ring_PIECE46
+    4300094: outer_ring_PIECE47
+    4300096: outer_ring_PIECE48
+    4300098: outer_ring_PIECE49
+    4300100: outer_ring_PIECE50
+    4300102: outer_ring_PIECE51
+    4300104: outer_ring_PIECE52
+    4300106: outer_ring_PIECE53
+    4300108: outer_ring_PIECE54
+    4300110: outer_ring_PIECE55
+    4300112: outer_ring_PIECE56
+    4300114: outer_ring_PIECE57
+    4300116: outer_ring_PIECE58
+    4300118: outer_ring_PIECE59
+    4300120: outer_ring_PIECE60
+    4300122: outer_ring_PIECE61
+    4300124: outer_ring_PIECE62
+    4300126: outer_ring_PIECE63
+    4300128: outer_ring_PIECE64
+    4300130: outer_ring_PIECE65
+    4300132: outer_ring_PIECE66
+    4300134: outer_ring_PIECE67
+    4300136: outer_ring_PIECE68
+    4300138: outer_ring_PIECE69
+    4300140: outer_ring_PIECE70
+    4300142: outer_ring_PIECE71
+    4300144: outer_ring_PIECE72
+    4300146: outer_ring_PIECE73
+    4300148: outer_ring_PIECE74
+    4300150: outer_ring_PIECE75
+    4300152: outer_ring_PIECE76
+    4300154: outer_ring_PIECE77
+    4300156: outer_ring_PIECE78
+    4300158: outer_ring_PIECE79
+    4300160: outer_ring_PIECE80
+    4300162: outer_ring_PIECE81
+    4300164: outer_ring_PIECE82
+    4300166: outer_ring_PIECE83
+    4300168: outer_ring_PIECE84
+    4300170: outer_ring_PIECE85
+    4300172: outer_ring_PIECE86
+    4300174: outer_ring_PIECE87
+    4300176: outer_ring_PIECE88
+    4300178: outer_ring_PIECE89
+    4300180: outer_ring_PIECE90
+    4300182: outer_ring_PIECE91
+    4300184: outer_ring_PIECE92
+    4300186: outer_ring_PIECE93
+    4300188: outer_ring_PIECE94
+    4300190: outer_ring_PIECE95
+    4300192: outer_ring_PIECE96
+    4300194: outer_ring_PIECE97
+    4300196: outer_ring_PIECE98
+    4300198: outer_ring_PIECE99
+    4300200: outer_ring_PIECE100
+    4300202: outer_ring_PIECE101
+    4300204: outer_ring_PIECE102
+    4300206: outer_ring_PIECE103
+    4300208: outer_ring_PIECE104
+    4300210: outer_ring_PIECE105
+    4300212: outer_ring_PIECE106
+    4300214: outer_ring_PIECE107
+    4300216: outer_ring_PIECE108
+    4300218: outer_ring_PIECE109
+    4300220: outer_ring_PIECE110
+    4300222: outer_ring_PIECE111
+    4300224: outer_ring_PIECE112
+    4300226: outer_ring_PIECE113
+    4300228: outer_ring_PIECE114
+    4300230: outer_ring_PIECE115
+    4300232: outer_ring_PIECE116
+    4300234: outer_ring_PIECE117
+    4300236: outer_ring_PIECE118
+    4300238: outer_ring_PIECE119
+    4300240: outer_ring_PIECE120
+    4300242: outer_ring_PIECE121
+    4300244: outer_ring_PIECE122
+    4300246: outer_ring_PIECE123
+    4300248: outer_ring_PIECE124
+    4300250: outer_ring_PIECE125
+    4300252: outer_ring_PIECE126
+    4300254: outer_ring_PIECE127
+    4300256: outer_ring_PIECE128
+    4300258: outer_ring_PIECE129
+    4300260: outer_ring_PIECE130
+    4300262: outer_ring_PIECE131
+    4300264: outer_ring_PIECE132
+    4300266: outer_ring_PIECE133
+    4300268: outer_ring_PIECE134
+    4300270: outer_ring_PIECE135
+    4300272: outer_ring_PIECE136
+    4300274: outer_ring_PIECE137
+    4300276: outer_ring_PIECE138
+    4300278: outer_ring_PIECE139
+    4300280: outer_ring_PIECE140
+    4300282: outer_ring_PIECE141
+    4300284: outer_ring_PIECE142
+    4300286: outer_ring_PIECE143
+    4300288: outer_ring_PIECE144
+    4300290: outer_ring_PIECE145
+    4300292: outer_ring_PIECE146
+    4300294: outer_ring_PIECE147
+    4300296: outer_ring_PIECE148
+    4300298: outer_ring_PIECE149
+    4300300: outer_ring_PIECE150
+    4300302: outer_ring_PIECE151
+    4300304: outer_ring_PIECE152
+    4300306: outer_ring_PIECE153
+    4300308: outer_ring_PIECE154
+    4300310: outer_ring_PIECE155
+    4300312: outer_ring_PIECE156
+    4300314: outer_ring_PIECE157
+    4300316: outer_ring_PIECE158
+    4300318: outer_ring_PIECE159
+    4300320: outer_ring_PIECE160
+    4300322: outer_ring_PIECE161
+    4300324: outer_ring_PIECE162
+    4300326: outer_ring_PIECE163
+    4300328: outer_ring_PIECE164
+    4300330: outer_ring_PIECE165
+    4300332: outer_ring_PIECE166
+    4300334: outer_ring_PIECE167
+    4300336: outer_ring_PIECE168
+    4300338: outer_ring_PIECE169
+    4300340: outer_ring_PIECE170
+    4300342: outer_ring_PIECE171
+    4300344: outer_ring_PIECE172
+    4300346: outer_ring_PIECE173
+    4300348: outer_ring_PIECE174
+    4300350: outer_ring_PIECE175
+    4300352: outer_ring_PIECE176
+    4300354: outer_ring_PIECE177
+    4300356: outer_ring_PIECE178
+    4300358: outer_ring_PIECE179
+    4300360: outer_ring_PIECE180
+    4300362: outer_ring_PIECE181
+    4300364: outer_ring_PIECE182
+    4300366: outer_ring_PIECE183
+    4300368: outer_ring_PIECE184
+    4300370: outer_ring_PIECE185
+    4300372: outer_ring_PIECE186
+    4300374: outer_ring_PIECE187
+    4300376: outer_ring_PIECE188
+    4300378: outer_ring_PIECE189
+    4300380: outer_ring_PIECE190
+    4300382: outer_ring_PIECE191
+    4300384: outer_ring_PIECE192
+    4300386: outer_ring_PIECE193
+    4300388: outer_ring_PIECE194
+    4300390: outer_ring_PIECE195
+    4300392: outer_ring_PIECE196
+    4300394: outer_ring_PIECE197
+    4300396: outer_ring_PIECE198
+    4300398: outer_ring_PIECE199
+    4300400: outer_ring_PIECE200
+    4300402: outer_ring_PIECE201
+    4300404: outer_ring_PIECE202
+    4300406: outer_ring_PIECE203
+    4300408: outer_ring_PIECE204
+    4300410: outer_ring_PIECE205
+    4300412: outer_ring_PIECE206
+    4300414: outer_ring_PIECE207
+    4300416: outer_ring_PIECE208
+    4300418: outer_ring_PIECE209
+    4300420: outer_ring_PIECE210
+    4300422: outer_ring_PIECE211
+    4300424: outer_ring_PIECE212
+    4300426: outer_ring_PIECE213
+    4300428: outer_ring_PIECE214
+    4300430: outer_ring_PIECE215
+    4300432: outer_ring_PIECE216
+    4300434: outer_ring_PIECE217
+    4300436: outer_ring_PIECE218
+    4300438: outer_ring_PIECE219
+    4300440: outer_ring_PIECE220
+    4300442: outer_ring_PIECE221
+    4300444: outer_ring_PIECE222
+    4300446: outer_ring_PIECE223
+    4300448: outer_ring_PIECE224
+    4300450: outer_ring_PIECE225
+    4300452: outer_ring_PIECE226
+    4300454: outer_ring_PIECE227
+    4300456: outer_ring_PIECE228
+    4300458: outer_ring_PIECE229
+    4300460: outer_ring_PIECE230
+    4300462: outer_ring_PIECE231
+    4300464: outer_ring_PIECE232
+    4300466: outer_ring_PIECE233
+    4300468: outer_ring_PIECE234
+    4300470: outer_ring_PIECE235
+    4300472: outer_ring_PIECE236
+    4300474: outer_ring_PIECE237
+    4300476: outer_ring_PIECE238
+    4300478: outer_ring_PIECE239
+    4300480: outer_ring_PIECE240
+    4300482: outer_ring_PIECE241
+    4300484: outer_ring_PIECE242
+    4300486: outer_ring_PIECE243
+    4300488: outer_ring_PIECE244
+    4300490: outer_ring_PIECE245
+    4300492: outer_ring_PIECE246
+    4300494: outer_ring_PIECE247
+    4300496: outer_ring_PIECE248
+    4300498: outer_ring_PIECE249
+    4300500: outer_ring_PIECE250
+    4300502: outer_ring_PIECE251
+    4300504: outer_ring_PIECE252
+    4300506: outer_ring_PIECE253
+    4300508: outer_ring_PIECE254
+    4300510: outer_ring_PIECE255
+    7400000: Main
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Main
+      takeName: Main
+      firstFrame: 1
+      lastFrame: 240
+      wrapMode: 4
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: outer_ring_PIECE0
+        weight: 1
+      - path: outer_ring_PIECE1
+        weight: 1
+      - path: outer_ring_PIECE2
+        weight: 1
+      - path: outer_ring_PIECE3
+        weight: 1
+      - path: outer_ring_PIECE4
+        weight: 1
+      - path: outer_ring_PIECE5
+        weight: 1
+      - path: outer_ring_PIECE6
+        weight: 1
+      - path: outer_ring_PIECE7
+        weight: 1
+      - path: outer_ring_PIECE8
+        weight: 1
+      - path: outer_ring_PIECE9
+        weight: 1
+      - path: outer_ring_PIECE10
+        weight: 1
+      - path: outer_ring_PIECE11
+        weight: 1
+      - path: outer_ring_PIECE12
+        weight: 1
+      - path: outer_ring_PIECE13
+        weight: 1
+      - path: outer_ring_PIECE14
+        weight: 1
+      - path: outer_ring_PIECE15
+        weight: 1
+      - path: outer_ring_PIECE16
+        weight: 1
+      - path: outer_ring_PIECE17
+        weight: 1
+      - path: outer_ring_PIECE18
+        weight: 1
+      - path: outer_ring_PIECE19
+        weight: 1
+      - path: outer_ring_PIECE20
+        weight: 1
+      - path: outer_ring_PIECE21
+        weight: 1
+      - path: outer_ring_PIECE22
+        weight: 1
+      - path: outer_ring_PIECE23
+        weight: 1
+      - path: outer_ring_PIECE24
+        weight: 1
+      - path: outer_ring_PIECE25
+        weight: 1
+      - path: outer_ring_PIECE26
+        weight: 1
+      - path: outer_ring_PIECE27
+        weight: 1
+      - path: outer_ring_PIECE28
+        weight: 1
+      - path: outer_ring_PIECE29
+        weight: 1
+      - path: outer_ring_PIECE30
+        weight: 1
+      - path: outer_ring_PIECE31
+        weight: 1
+      - path: outer_ring_PIECE32
+        weight: 1
+      - path: outer_ring_PIECE33
+        weight: 1
+      - path: outer_ring_PIECE34
+        weight: 1
+      - path: outer_ring_PIECE35
+        weight: 1
+      - path: outer_ring_PIECE36
+        weight: 1
+      - path: outer_ring_PIECE37
+        weight: 1
+      - path: outer_ring_PIECE38
+        weight: 1
+      - path: outer_ring_PIECE39
+        weight: 1
+      - path: outer_ring_PIECE40
+        weight: 1
+      - path: outer_ring_PIECE41
+        weight: 1
+      - path: outer_ring_PIECE42
+        weight: 1
+      - path: outer_ring_PIECE43
+        weight: 1
+      - path: outer_ring_PIECE44
+        weight: 1
+      - path: outer_ring_PIECE45
+        weight: 1
+      - path: outer_ring_PIECE46
+        weight: 1
+      - path: outer_ring_PIECE47
+        weight: 1
+      - path: outer_ring_PIECE48
+        weight: 1
+      - path: outer_ring_PIECE49
+        weight: 1
+      - path: outer_ring_PIECE50
+        weight: 1
+      - path: outer_ring_PIECE51
+        weight: 1
+      - path: outer_ring_PIECE52
+        weight: 1
+      - path: outer_ring_PIECE53
+        weight: 1
+      - path: outer_ring_PIECE54
+        weight: 1
+      - path: outer_ring_PIECE55
+        weight: 1
+      - path: outer_ring_PIECE56
+        weight: 1
+      - path: outer_ring_PIECE57
+        weight: 1
+      - path: outer_ring_PIECE58
+        weight: 1
+      - path: outer_ring_PIECE59
+        weight: 1
+      - path: outer_ring_PIECE60
+        weight: 1
+      - path: outer_ring_PIECE61
+        weight: 1
+      - path: outer_ring_PIECE62
+        weight: 1
+      - path: outer_ring_PIECE63
+        weight: 1
+      - path: outer_ring_PIECE64
+        weight: 1
+      - path: outer_ring_PIECE65
+        weight: 1
+      - path: outer_ring_PIECE66
+        weight: 1
+      - path: outer_ring_PIECE67
+        weight: 1
+      - path: outer_ring_PIECE68
+        weight: 1
+      - path: outer_ring_PIECE69
+        weight: 1
+      - path: outer_ring_PIECE70
+        weight: 1
+      - path: outer_ring_PIECE71
+        weight: 1
+      - path: outer_ring_PIECE72
+        weight: 1
+      - path: outer_ring_PIECE73
+        weight: 1
+      - path: outer_ring_PIECE74
+        weight: 1
+      - path: outer_ring_PIECE75
+        weight: 1
+      - path: outer_ring_PIECE76
+        weight: 1
+      - path: outer_ring_PIECE77
+        weight: 1
+      - path: outer_ring_PIECE78
+        weight: 1
+      - path: outer_ring_PIECE79
+        weight: 1
+      - path: outer_ring_PIECE80
+        weight: 1
+      - path: outer_ring_PIECE81
+        weight: 1
+      - path: outer_ring_PIECE82
+        weight: 1
+      - path: outer_ring_PIECE83
+        weight: 1
+      - path: outer_ring_PIECE84
+        weight: 1
+      - path: outer_ring_PIECE85
+        weight: 1
+      - path: outer_ring_PIECE86
+        weight: 1
+      - path: outer_ring_PIECE87
+        weight: 1
+      - path: outer_ring_PIECE88
+        weight: 1
+      - path: outer_ring_PIECE89
+        weight: 1
+      - path: outer_ring_PIECE90
+        weight: 1
+      - path: outer_ring_PIECE91
+        weight: 1
+      - path: outer_ring_PIECE92
+        weight: 1
+      - path: outer_ring_PIECE93
+        weight: 1
+      - path: outer_ring_PIECE94
+        weight: 1
+      - path: outer_ring_PIECE95
+        weight: 1
+      - path: outer_ring_PIECE96
+        weight: 1
+      - path: outer_ring_PIECE97
+        weight: 1
+      - path: outer_ring_PIECE98
+        weight: 1
+      - path: outer_ring_PIECE99
+        weight: 1
+      - path: outer_ring_PIECE100
+        weight: 1
+      - path: outer_ring_PIECE101
+        weight: 1
+      - path: outer_ring_PIECE102
+        weight: 1
+      - path: outer_ring_PIECE103
+        weight: 1
+      - path: outer_ring_PIECE104
+        weight: 1
+      - path: outer_ring_PIECE105
+        weight: 1
+      - path: outer_ring_PIECE106
+        weight: 1
+      - path: outer_ring_PIECE107
+        weight: 1
+      - path: outer_ring_PIECE108
+        weight: 1
+      - path: outer_ring_PIECE109
+        weight: 1
+      - path: outer_ring_PIECE110
+        weight: 1
+      - path: outer_ring_PIECE111
+        weight: 1
+      - path: outer_ring_PIECE112
+        weight: 1
+      - path: outer_ring_PIECE113
+        weight: 1
+      - path: outer_ring_PIECE114
+        weight: 1
+      - path: outer_ring_PIECE115
+        weight: 1
+      - path: outer_ring_PIECE116
+        weight: 1
+      - path: outer_ring_PIECE117
+        weight: 1
+      - path: outer_ring_PIECE118
+        weight: 1
+      - path: outer_ring_PIECE119
+        weight: 1
+      - path: outer_ring_PIECE120
+        weight: 1
+      - path: outer_ring_PIECE121
+        weight: 1
+      - path: outer_ring_PIECE122
+        weight: 1
+      - path: outer_ring_PIECE123
+        weight: 1
+      - path: outer_ring_PIECE124
+        weight: 1
+      - path: outer_ring_PIECE125
+        weight: 1
+      - path: outer_ring_PIECE126
+        weight: 1
+      - path: outer_ring_PIECE127
+        weight: 1
+      - path: outer_ring_PIECE128
+        weight: 1
+      - path: outer_ring_PIECE129
+        weight: 1
+      - path: outer_ring_PIECE130
+        weight: 1
+      - path: outer_ring_PIECE131
+        weight: 1
+      - path: outer_ring_PIECE132
+        weight: 1
+      - path: outer_ring_PIECE133
+        weight: 1
+      - path: outer_ring_PIECE134
+        weight: 1
+      - path: outer_ring_PIECE135
+        weight: 1
+      - path: outer_ring_PIECE136
+        weight: 1
+      - path: outer_ring_PIECE137
+        weight: 1
+      - path: outer_ring_PIECE138
+        weight: 1
+      - path: outer_ring_PIECE139
+        weight: 1
+      - path: outer_ring_PIECE140
+        weight: 1
+      - path: outer_ring_PIECE141
+        weight: 1
+      - path: outer_ring_PIECE142
+        weight: 1
+      - path: outer_ring_PIECE143
+        weight: 1
+      - path: outer_ring_PIECE144
+        weight: 1
+      - path: outer_ring_PIECE145
+        weight: 1
+      - path: outer_ring_PIECE146
+        weight: 1
+      - path: outer_ring_PIECE147
+        weight: 1
+      - path: outer_ring_PIECE148
+        weight: 1
+      - path: outer_ring_PIECE149
+        weight: 1
+      - path: outer_ring_PIECE150
+        weight: 1
+      - path: outer_ring_PIECE151
+        weight: 1
+      - path: outer_ring_PIECE152
+        weight: 1
+      - path: outer_ring_PIECE153
+        weight: 1
+      - path: outer_ring_PIECE154
+        weight: 1
+      - path: outer_ring_PIECE155
+        weight: 1
+      - path: outer_ring_PIECE156
+        weight: 1
+      - path: outer_ring_PIECE157
+        weight: 1
+      - path: outer_ring_PIECE158
+        weight: 1
+      - path: outer_ring_PIECE159
+        weight: 1
+      - path: outer_ring_PIECE160
+        weight: 1
+      - path: outer_ring_PIECE161
+        weight: 1
+      - path: outer_ring_PIECE162
+        weight: 1
+      - path: outer_ring_PIECE163
+        weight: 1
+      - path: outer_ring_PIECE164
+        weight: 1
+      - path: outer_ring_PIECE165
+        weight: 1
+      - path: outer_ring_PIECE166
+        weight: 1
+      - path: outer_ring_PIECE167
+        weight: 1
+      - path: outer_ring_PIECE168
+        weight: 1
+      - path: outer_ring_PIECE169
+        weight: 1
+      - path: outer_ring_PIECE170
+        weight: 1
+      - path: outer_ring_PIECE171
+        weight: 1
+      - path: outer_ring_PIECE172
+        weight: 1
+      - path: outer_ring_PIECE173
+        weight: 1
+      - path: outer_ring_PIECE174
+        weight: 1
+      - path: outer_ring_PIECE175
+        weight: 1
+      - path: outer_ring_PIECE176
+        weight: 1
+      - path: outer_ring_PIECE177
+        weight: 1
+      - path: outer_ring_PIECE178
+        weight: 1
+      - path: outer_ring_PIECE179
+        weight: 1
+      - path: outer_ring_PIECE180
+        weight: 1
+      - path: outer_ring_PIECE181
+        weight: 1
+      - path: outer_ring_PIECE182
+        weight: 1
+      - path: outer_ring_PIECE183
+        weight: 1
+      - path: outer_ring_PIECE184
+        weight: 1
+      - path: outer_ring_PIECE185
+        weight: 1
+      - path: outer_ring_PIECE186
+        weight: 1
+      - path: outer_ring_PIECE187
+        weight: 1
+      - path: outer_ring_PIECE188
+        weight: 1
+      - path: outer_ring_PIECE189
+        weight: 1
+      - path: outer_ring_PIECE190
+        weight: 1
+      - path: outer_ring_PIECE191
+        weight: 1
+      - path: outer_ring_PIECE192
+        weight: 1
+      - path: outer_ring_PIECE193
+        weight: 1
+      - path: outer_ring_PIECE194
+        weight: 1
+      - path: outer_ring_PIECE195
+        weight: 1
+      - path: outer_ring_PIECE196
+        weight: 1
+      - path: outer_ring_PIECE197
+        weight: 1
+      - path: outer_ring_PIECE198
+        weight: 1
+      - path: outer_ring_PIECE199
+        weight: 1
+      - path: outer_ring_PIECE200
+        weight: 1
+      - path: outer_ring_PIECE201
+        weight: 1
+      - path: outer_ring_PIECE202
+        weight: 1
+      - path: outer_ring_PIECE203
+        weight: 1
+      - path: outer_ring_PIECE204
+        weight: 1
+      - path: outer_ring_PIECE205
+        weight: 1
+      - path: outer_ring_PIECE206
+        weight: 1
+      - path: outer_ring_PIECE207
+        weight: 1
+      - path: outer_ring_PIECE208
+        weight: 1
+      - path: outer_ring_PIECE209
+        weight: 1
+      - path: outer_ring_PIECE210
+        weight: 1
+      - path: outer_ring_PIECE211
+        weight: 1
+      - path: outer_ring_PIECE212
+        weight: 1
+      - path: outer_ring_PIECE213
+        weight: 1
+      - path: outer_ring_PIECE214
+        weight: 1
+      - path: outer_ring_PIECE215
+        weight: 1
+      - path: outer_ring_PIECE216
+        weight: 1
+      - path: outer_ring_PIECE217
+        weight: 1
+      - path: outer_ring_PIECE218
+        weight: 1
+      - path: outer_ring_PIECE219
+        weight: 1
+      - path: outer_ring_PIECE220
+        weight: 1
+      - path: outer_ring_PIECE221
+        weight: 1
+      - path: outer_ring_PIECE222
+        weight: 1
+      - path: outer_ring_PIECE223
+        weight: 1
+      - path: outer_ring_PIECE224
+        weight: 1
+      - path: outer_ring_PIECE225
+        weight: 1
+      - path: outer_ring_PIECE226
+        weight: 1
+      - path: outer_ring_PIECE227
+        weight: 1
+      - path: outer_ring_PIECE228
+        weight: 1
+      - path: outer_ring_PIECE229
+        weight: 1
+      - path: outer_ring_PIECE230
+        weight: 1
+      - path: outer_ring_PIECE231
+        weight: 1
+      - path: outer_ring_PIECE232
+        weight: 1
+      - path: outer_ring_PIECE233
+        weight: 1
+      - path: outer_ring_PIECE234
+        weight: 1
+      - path: outer_ring_PIECE235
+        weight: 1
+      - path: outer_ring_PIECE236
+        weight: 1
+      - path: outer_ring_PIECE237
+        weight: 1
+      - path: outer_ring_PIECE238
+        weight: 1
+      - path: outer_ring_PIECE239
+        weight: 1
+      - path: outer_ring_PIECE240
+        weight: 1
+      - path: outer_ring_PIECE241
+        weight: 1
+      - path: outer_ring_PIECE242
+        weight: 1
+      - path: outer_ring_PIECE243
+        weight: 1
+      - path: outer_ring_PIECE244
+        weight: 1
+      - path: outer_ring_PIECE245
+        weight: 1
+      - path: outer_ring_PIECE246
+        weight: 1
+      - path: outer_ring_PIECE247
+        weight: 1
+      - path: outer_ring_PIECE248
+        weight: 1
+      - path: outer_ring_PIECE249
+        weight: 1
+      - path: outer_ring_PIECE250
+        weight: 1
+      - path: outer_ring_PIECE251
+        weight: 1
+      - path: outer_ring_PIECE252
+        weight: 1
+      - path: outer_ring_PIECE253
+        weight: 1
+      - path: outer_ring_PIECE254
+        weight: 1
+      - path: outer_ring_PIECE255
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,44 +5,41 @@ using UnityEngine.Networking;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class MenuButton : MonoBehaviour
+//Handles the button's tasks and determines which order in the menu select the button is in
+public class MenuButton : TungDoesMathForYou
 {
     /*Settings*/
-    public InputField IP;
-    public InputField Port;
+    public int ButtonID = 1; //Determines if the button is currently selected or not depending on it's parent's CurrentID (If CurrentID matches ButtonID)
+    public bool Animate = true; //Uses the animation handled in this script, for custom ones have this false and make your own script
+    public Vector3 SelectedScale = new Vector3(1.4f, 1.4f, 1.4f);
+
+    /*Data*/
+    private Vector3 StartingSize = Vector3.one;
+
+    /*Data*/
+    public bool Toggle = true;
+
+    /*Callable functions*/
+    public UnityEvent OnToggled;
 
     /*Required components*/
-    private ManagerTracker Tracker;
-    private NetworkManager TheNetworkManager;
+    private RectTransform TheRectTransform;
 
     void Start()
     {
-        Tracker = FindObjectOfType<ManagerTracker>();
+        TheRectTransform = GetComponent<RectTransform>();
+        StartingSize = TheRectTransform.localScale;
     }
 
-    //Adds a string into a text field
-    public void InputStringToField(string InputLetter, GameObject TargetInputField)
+    void Update()
     {
-        
+        UpdateButton();
     }
 
-    //Host server
-    public void Host()
+    void UpdateButton()
     {
-        TheNetworkManager.networkPort = int.Parse(Port.text);
-        TheNetworkManager.StartHost();
-    }
-
-    //Connect to server
-    public void Join()
-    {
-        TheNetworkManager.networkAddress = IP.text;
-        TheNetworkManager.networkPort = int.Parse(Port.text);
-        TheNetworkManager.StartClient();
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
+        if (!transform.parent.GetComponent<MenuManager>().Activated) return;
+        if (transform.parent.GetComponent<MenuManager>().CurrentID == ButtonID) TheRectTransform.localScale = SelectedScale;
+        else TheRectTransform.localScale = StartingSize;
     }
 }

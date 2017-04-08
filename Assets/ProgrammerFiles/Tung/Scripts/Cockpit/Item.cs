@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Attach to all item objects, used for enabling/disabling physics, changing layer masks, and keeping track of throw data
-public class Item : MonoBehaviour
+public class Item : TungDoesMathForYou
 {
     /*Settings*/
     public string GrabbedLayer = "IgnoreHands";
@@ -78,16 +78,6 @@ public class Item : MonoBehaviour
                 if (ThrowForce != Vector3.zero) TheRigidbody.AddForce(ThrowForce, ForceMode.Impulse);
                 ThrowForce = Vector3.zero;
             }
-        }
-    }
-
-    //Apply layer to all childs of a transform
-    void ApplyLayerToChilds(Transform TheGameObject, string LayerName)
-    {
-        foreach (Transform child in TheGameObject)
-        {
-            child.gameObject.layer = LayerMask.NameToLayer(LayerName);
-            ApplyLayerToChilds(child, LayerName);
         }
     }
 }

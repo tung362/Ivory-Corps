@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 //Keeps track of the client's player, also all local settings
-public class ManagerTracker : MonoBehaviour
+public class ManagerTracker : TungDoesMathForYou
 {
     /*Access to client's player*/
     public PlayerControlPanel ThePlayerControlPanel;

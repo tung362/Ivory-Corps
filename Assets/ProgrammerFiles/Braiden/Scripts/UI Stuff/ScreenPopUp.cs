@@ -28,7 +28,7 @@ public class ScreenPopUp : MonoBehaviour {
     //Deactivate Timer
     public float deactivateKeyIntervalTime;
     private float deaKeyTimer = 0.0f;
-    private bool activateComplete, deactivateComplete;
+    //private bool activateComplete, deactivateComplete;
     
 
 	// Use this for initialization
@@ -41,12 +41,17 @@ public class ScreenPopUp : MonoBehaviour {
        othrKeys = setKeyPositions(othrKeys, -1f, -1f, othrKeyOffset);
         keyTimer = keyIntervalTime;
         deaKeyTimer = deactivateKeyIntervalTime;
-        activateComplete = false; deactivateComplete = false;
+        //activateComplete = false; deactivateComplete = false;
 
         if (UseScreenObjectAsOrigin){originPoint = this.transform.position;}
 
 	}
-	
+
+    public void ScreenUpBoot()
+    {
+        ScreenUp = !ScreenUp;
+    }
+
 
 	// Update is called once per frame
 	void Update () {

@@ -1,0 +1,34 @@
+tier 1
+
+forward
+right
+
+headbutt
+
+ragdoll
+
+tier 2
+
+run forward
+run right
+
+headbutt response
+
+tier 5
+
+
+
+
+To Do:
+computer menu
+Ammo/gun system
+Start importing lever assets
+Implement Elephant
+Add room effects (wobble, room shake, etc)
+
+
+-blinds that can be pulled down to increase armor but blind you
+-for emergency button have a hammer where you need to break the glass and grab the cannister that you twist and pull
+-hanging lights (synaps)
+-monitors being disconnected from getting hit pull wires from back panels to reconnect (plug)
+-After using emergency button, all power goes away have to spark wires to burn everything back on

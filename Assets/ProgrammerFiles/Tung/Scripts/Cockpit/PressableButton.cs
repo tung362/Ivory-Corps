@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PressableButton : MonoBehaviour
+public class PressableButton : TungDoesMathForYou
 {
     /*Settings*/
     public float PressLimitY = -0.015f;
+    public float RepressableThresholdPercentage = 0.5f;
     public float ButtonRiseSpeed = 10;
 
     /*Data*/
@@ -38,12 +39,16 @@ public class PressableButton : MonoBehaviour
 
         if (transform.localPosition.y <= PressLimitY)
         {
-            if(Toggle)
+            if (Toggle)
             {
                 OnToggled.Invoke();
                 Toggle = false;
             }
         }
-        else Toggle = true;
+        else
+        {
+            float difference = (StartingY - PressLimitY) * RepressableThresholdPercentage;
+            if (transform.localPosition.y >= PressLimitY + difference) Toggle = true;
+        }
     }
 }

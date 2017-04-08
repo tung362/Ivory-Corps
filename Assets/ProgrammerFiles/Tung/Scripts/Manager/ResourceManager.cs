@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 //Keeps track of server data
-public class ResourceManager : NetworkBehaviour
+public class ResourceManager : TungDoesNetworkingForyou
 {
     /*Required components*/
     private ManagerTracker Tracker;

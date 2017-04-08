@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Attach this to controllers
-public class StickController : MonoBehaviour
+public class StickController : TungDoesMathForYou
 {
     //Get Input keys
     public Valve.VR.EVRButtonId GripyButton = Valve.VR.EVRButtonId.k_EButton_Grip;

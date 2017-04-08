@@ -12,6 +12,7 @@ TagManager:
   - Crank
   - Ammo
   - Cube
+  - Socket
   layers:
   - Default
   - TransparentFX

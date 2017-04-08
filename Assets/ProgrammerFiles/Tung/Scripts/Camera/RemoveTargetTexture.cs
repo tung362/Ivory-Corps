@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 //Removes the target texture if there is no authority
-public class RemoveTargetTexture : MonoBehaviour
+public class RemoveTargetTexture : TungDoesMathForYou
 {
     /*Required components*/
     private ManagerTracker Tracker;

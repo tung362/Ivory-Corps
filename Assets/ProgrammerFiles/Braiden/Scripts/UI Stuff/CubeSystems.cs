@@ -14,8 +14,10 @@ using UnityEngine.Events;
      */
 public class CubeSystems : MonoBehaviour
 {
-    //EVENT STUFF
-    public UnityEvent CubeEvent;
+                //EVENT STUFF\\
+    //This will be called during any event
+    public UnityEvent AnySystemActivatedEvent;
+    //specific event
     public UnityEvent[] SystemActivation;
 
     //CUBE STUFF
@@ -24,7 +26,7 @@ public class CubeSystems : MonoBehaviour
 
     private void Start()
     {
-        SystemActivation = new UnityEvent[5];
+       
     }
 
     private void Update()
@@ -35,11 +37,48 @@ public class CubeSystems : MonoBehaviour
     //invoke the start up of the vitals system
     public void SystemVitalBoot()
     {
+        Debug.Log("Trying to boot the vitals");
         //should call on the vitals manager  and anything related to it
         SystemActivation[0].Invoke();
+        //CubeEvent.Invoke();
 
     }
+
+    public void SystemCannonOneBoot()
+    {
+        SystemActivation[2].Invoke();
+    }
+
+    public void SystemCannonTwoBoot()
+    {
+        SystemActivation[3].Invoke();
+    }
+
+    public void SystemAdrenalineBoot()
+    {
+        SystemActivation[1].Invoke();
+    }
+
+    public void SystemKeyboardBoot()
+    {
+        SystemActivation[4].Invoke();
+    }
+
+    public void DeactivateVitalSystem()
+    {
+        SystemActivation[5].Invoke();
+    }
+
+    public void DeactivateKeyboardSystem()
+    {
+        SystemActivation[6].Invoke();
+    }
+
 }
+
+
+
+
 
 //Each event will hold the activation for the functionality of the system it is currently in as well as the lighting that is in that section
 

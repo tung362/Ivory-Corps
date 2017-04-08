@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 //[ExecuteInEditMode]
 //Handles the lever functions
-public class Lever : MonoBehaviour
+public class Lever : TungDoesMathForYou
 {
     /*Settings*/
     [Header("Settings")]

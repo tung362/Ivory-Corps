@@ -32,3 +32,14 @@ Add room effects (wobble, room shake, etc)
 -hanging lights (synaps)
 -monitors being disconnected from getting hit pull wires from back panels to reconnect (plug)
 -After using emergency button, all power goes away have to spark wires to burn everything back on
+
+
+
+
+
+minimum:
+fun interactive room
+walk around mamath/showcase real scale
+
+
+lobby system
