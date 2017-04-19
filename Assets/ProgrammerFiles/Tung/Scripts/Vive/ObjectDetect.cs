@@ -15,7 +15,7 @@ public class ObjectDetect : TungDoesMathForYou
     void OnTriggerStay(Collider other)
     {
         if (Grabber == null) return;
-        if (other.tag == "Lever" || other.tag == "Item")
+        if (other.tag == "Lever" || other.tag == "Item" || other.tag == "Crank")
         {
             if (Grabber.ObjectToGrab == null) Grabber.ObjectToGrab = other.transform.root.gameObject;
         }
@@ -24,7 +24,7 @@ public class ObjectDetect : TungDoesMathForYou
     void OnTriggerExit(Collider other)
     {
         if (Grabber == null) return;
-        if (other.tag == "Lever" || other.tag == "Item")
+        if (/*other.tag == "Lever" ||*/ other.tag == "Item"/* || other.tag == "Crank"*/)
         {
             if (Grabber.ObjectToGrab != null)
             {
@@ -33,8 +33,8 @@ public class ObjectDetect : TungDoesMathForYou
                     if(other.tag == "Item")
                     {
                         Grabber.ObjectToGrab.GetComponent<Item>().IsDefault = true;
-                        Grabber.ObjectToGrab.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                        Grabber.ObjectToGrab.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+                        //Grabber.ObjectToGrab.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                        //Grabber.ObjectToGrab.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
                         Grabber.ObjectToGrab.GetComponent<Item>().DefaultToggle = true;
                     }
                     Grabber.ObjectToGrab = null;

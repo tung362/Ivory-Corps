@@ -11,6 +11,9 @@ public class PlayerControlPanel : TungDoesNetworkingForyou
     [HideInInspector]
     public int ID = -1;
 
+    [SyncVar]
+    public bool IsHost = false;
+
     /*Managers*/
     [HideInInspector]
     public ResourceManager TheResourceManager;
@@ -27,7 +30,11 @@ public class PlayerControlPanel : TungDoesNetworkingForyou
 
         GetManagers();
 
-        if (isServer) ID = connectionToClient.connectionId;
+        if (isServer)
+        {
+            ID = connectionToClient.connectionId;
+            IsHost = true;
+        }
         if (!hasAuthority) return;
 
         Tracker.ThePlayerControlPanel = this;

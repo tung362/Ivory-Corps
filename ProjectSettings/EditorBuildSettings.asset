@@ -6,4 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/ProgrammerFiles/Tung/Scenes/ElephantShowcase.unity
+    guid: b9bc2d0e3c0587447a3ef18d736d07f0
+  - enabled: 1
+    path: Assets/ProgrammerFiles/Tung/Scenes/Alpha.unity
+    guid: 4cff0fa268b57144b94075f0fe547dbc
+  - enabled: 1
+    path: Assets/ProgrammerFiles/Tung/Scenes/Braiden.unity
+    guid: 20f73309ba9dc6b4aa7098d1720c8988
+  - enabled: 1
     path: Assets/ProgrammerFiles/Tung/Scenes/Test2.unity
+    guid: a6e36854096e32a4ba725758ed4bad81

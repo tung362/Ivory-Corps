@@ -12,40 +12,60 @@ public class CubeSocket : MonoBehaviour {
 
     //public CubeSystems manager;
     [Range(0,20)]
-    public float socketRadius = 0;
+    public float socketRadius = 1.0f;
     public SphereCollider sphere;// = new SphereCollider();
     GameObject Socket;
-    public GameObject Model;
+    //public GameObject Model;
     public Rigidbody rigid;
-    public Rigidbody sockRigid;
-
+    
    // public UnityEvent inputEvent;
     public CubeSystems Manager;
     public enum mySystem { VITALS, CANN_1, CANN_2, ADRENALINE, KEYBOARD};
     public mySystem systType;
-    
+
+    public Transform systemTransform;
+
     void Start()
     {
-       
+        
         tag = "Socket";
         
-        rigid = gameObject.AddComponent<Rigidbody>();
-        rigid.isKinematic = true;
-        rigid.useGravity = false;
-
+       
+   
         Socket = new GameObject(systType.ToString() + "_Socket");
-        Socket.transform.SetParent(this.transform);
-        Socket.transform.position = this.transform.position;
-        Socket.tag = "Socket";
         
+        Socket.transform.position = this.transform.position;
+        //Socket.transform.SetParent(this.transform);
+        //this.transform.SetParent(Socket.transform);
+        Socket.transform.SetParent(systemTransform);
+        this.transform.SetParent(Socket.transform);
+
+        if (rigid == null)
+        {
+            rigid = Socket.AddComponent<Rigidbody>();
+            rigid.isKinematic = true;
+            rigid.useGravity = false;
+        }
+        Socket.tag = "Socket";
+
+        //sphere = Socket.AddComponent<SphereCollider>();
         sphere = Socket.AddComponent<SphereCollider>();
-        sphere.radius = socketRadius;
+        sphere.radius = 1.0f;
         sphere.isTrigger = true;
+        //rigid = Socket.AddComponent<Rigidbody>();
+        //rigid.isKinematic = false;
+        //rigid.useGravity = false;
+        
 
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(this.transform.position, socketRadius);
+        
+    }
 
-   
     Animator otherAnimator = new Animator();
     
     void OnTriggerEnter(Collider other)
@@ -68,22 +88,22 @@ public class CubeSocket : MonoBehaviour {
 
                     break;
                 case mySystem.CANN_1:
-                    //Debug.Log("I am Cannonly 1 TRIGGERED");
+                    Debug.Log("I am Cannonly 1 TRIGGERED");
                     otherAnimator.SetTrigger("EnteredCannon");
                     Manager.SystemCannonOneBoot();
                     break;
                 case mySystem.CANN_2:
-                    //Debug.Log("I am Cannonly 2 TRIGGERED");
+                    Debug.Log("I am Cannonly 2 TRIGGERED");
                     otherAnimator.SetTrigger("EnteredCannon");
                     Manager.SystemCannonTwoBoot();
                     break;
                 case mySystem.ADRENALINE:
-                    //Debug.Log("I am ADRENALINLY TRIGGERED");
+                    Debug.Log("I am ADRENALINLY TRIGGERED");
                     otherAnimator.SetTrigger("EnteredAdrenaline");
                     Manager.SystemAdrenalineBoot();
                     break;
                 case mySystem.KEYBOARD:
-                    //Debug.Log("I am KEYBOARDLY TRIGGERED");
+                    Debug.Log("I am KEYBOARDLY TRIGGERED");
                     otherAnimator.SetTrigger("EnteredKeyboard");
                     Manager.SystemKeyboardBoot();
                     break;
@@ -112,6 +132,10 @@ public class CubeSocket : MonoBehaviour {
                     break;
                 case mySystem.VITALS:
                     Manager.DeactivateVitalSystem();
+                    break;
+
+                case mySystem.ADRENALINE:
+                    Manager.DeactivateAdrenalineSystem();
                     break;
 
 

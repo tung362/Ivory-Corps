@@ -30,6 +30,15 @@ public class TungDoesMathForYou : MonoBehaviour
         }
     }
 
+    //Returns the parent gameobject that has the selected component
+    public GameObject FindParentObjectWithComponent(Transform TheGameObject, System.Type TargetedType)
+    {
+        GameObject retval = null;
+        retval = TheGameObject.parent.GetComponent(TargetedType).gameObject;
+        if(retval == null) retval = FindParentObjectWithComponent(TheGameObject.parent, TargetedType);
+        return retval;
+    }
+
     public Color Vector4ToColor(Vector4 p)
     {
         Color c = new Color();

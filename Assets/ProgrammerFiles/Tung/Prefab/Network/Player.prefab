@@ -55,6 +55,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: -1
+  IsHost: 0
   TheResourceManager: {fileID: 0}
   TheCommandManager: {fileID: 0}
 --- !u!114 &114343454820976942
@@ -69,6 +70,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Elephant1: {fileID: 1016787357806286, guid: aeb498b3952a65440b653fb080fa9cbb, type: 2}
+  shellPrefab: {fileID: 1030934816836420, guid: 10ca26b6b57307c429b48c1a8ee16e41,
+    type: 2}
 --- !u!114 &114541837960092858
 MonoBehaviour:
   m_ObjectHideFlags: 1

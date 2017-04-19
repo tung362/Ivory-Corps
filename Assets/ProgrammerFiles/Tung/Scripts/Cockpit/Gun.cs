@@ -11,6 +11,9 @@ public class Gun : TungDoesMathForYou
     public int MaxAmmo = 5;
     public float ReloadDelay = 1; //Speed of reload
 
+    public Transform BulletSpawnLoc;
+    public GameObject shellPrefab;
+
     /*Data*/
     private int Ammo = 0; //Current ammo count
     private float Timer = 0;
@@ -19,6 +22,7 @@ public class Gun : TungDoesMathForYou
     private bool Toggle = false; //Prevents spam reload
     private int CurrentReloadAmmo = 0;
     private bool Cocked = false;
+
 
     /*Required components*/
     private ManagerTracker Tracker;
@@ -57,6 +61,15 @@ public class Gun : TungDoesMathForYou
                 CurrentReloadAmmo = 0;
             }
         }
+
+        //DELETE THIS LATER BRAIDAMN
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            Cocked = true;
+            Tracker.IsFullyReady = true;
+            BulletUpdate(AmmoPrefab);
+            Fire();
+        }
     }
 
     public void BulletUpdate(GameObject other)
@@ -72,7 +85,8 @@ public class Gun : TungDoesMathForYou
     {
         if(Cocked && Tracker.IsFullyReady)
         {
-            Tracker.ThePlayerControlPanel.TheCommandManager.CmdFire();
+            //Braidamn was here
+            Tracker.ThePlayerControlPanel.TheCommandManager.CmdFire( BulletSpawnLoc.position, BulletSpawnLoc.rotation, Tracker.ThePlayerControlPanel.ID);
             Loaded = false;
             Cocked = false;
         }

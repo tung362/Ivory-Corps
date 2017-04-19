@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: d62c9c61cdae99c4db29c79094fefa24
+timeCreated: 1492445156
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: blade
+    100004: blade2
+    100006: blade3
+    100008: blade4
+    100010: blade5
+    100012: canister_holder
+    100014: fan
+    100016: generator_core_1
+    100018: generator_core_2
+    100020: generator_core_3
+    100022: generator_core_4
+    100024: generator_core_5
+    100026: generator_core_6
+    100028: generator_core_7
+    400000: //RootNode
+    400002: blade
+    400004: blade2
+    400006: blade3
+    400008: blade4
+    400010: blade5
+    400012: canister_holder
+    400014: fan
+    400016: generator_core_1
+    400018: generator_core_2
+    400020: generator_core_3
+    400022: generator_core_4
+    400024: generator_core_5
+    400026: generator_core_6
+    400028: generator_core_7
+    2300000: //RootNode
+    2300002: blade
+    2300004: blade2
+    2300006: blade3
+    2300008: blade4
+    2300010: blade5
+    2300012: canister_holder
+    2300014: fan
+    2300016: generator_core_1
+    2300018: generator_core_2
+    2300020: generator_core_3
+    2300022: generator_core_4
+    2300024: generator_core_5
+    2300026: generator_core_6
+    2300028: generator_core_7
+    3300000: //RootNode
+    3300002: blade
+    3300004: blade2
+    3300006: blade3
+    3300008: blade4
+    3300010: blade5
+    3300012: canister_holder
+    3300014: fan
+    3300016: generator_core_1
+    3300018: generator_core_2
+    3300020: generator_core_3
+    3300022: generator_core_4
+    3300024: generator_core_5
+    3300026: generator_core_6
+    3300028: generator_core_7
+    4300000: generator
+    4300002: generator_core_1
+    4300004: generator_core_2
+    4300006: generator_core_3
+    4300008: generator_core_4
+    4300010: generator_core_5
+    4300012: generator_core_6
+    4300014: generator_core_7
+    4300016: canister_holder
+    4300018: fan
+    4300020: blade
+    4300022: blade2
+    4300024: blade3
+    4300026: blade4
+    4300028: blade5
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2.5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,7 @@ using UnityEngine;
 //hologram bottom lights up, keys will flicker on, background edge will show up, then the line shader (hologram shader) fades in
 public class ScreenPopUp : MonoBehaviour {
     public bool ScreenUp;
+    public bool UseTungKeys = true;
     public bool UseScreenObjectAsOrigin;
     //Key object init's
     public GameObject keyModel; //the 3d model of an individual key
@@ -35,10 +36,26 @@ public class ScreenPopUp : MonoBehaviour {
 	void Start () {
         width = dimensions.x; height = dimensions.y;
         //ScreenUp = false;
-        numKeys = addKeysToList(10);
-        othrKeys = addKeysToList(3);
-       numKeys = setKeyPositions(numKeys, 0f, 0f, numKeyOffset);
-       othrKeys = setKeyPositions(othrKeys, -1f, -1f, othrKeyOffset);
+
+        //Create new keys
+        if (!UseTungKeys)
+        {
+            Debug.Log("Using Braiden's Keys");
+            numKeys = addKeysToList(10);
+            othrKeys = addKeysToList(3);
+
+            for (int i = 0; i < numKeys.Count; i++) { numKeys[i].transform.SetParent(this.transform); }
+            for (int i = 0; i < othrKeys.Count; i++) { othrKeys[i].transform.SetParent(this.transform); }
+
+        }
+
+        //set the new key's parent to this
+
+        //set the new keys positions 
+        numKeys = setKeyPositions(numKeys, 0f, 0f, numKeyOffset);
+       othrKeys = setKeyPositions(othrKeys, -.1f, -.2f, othrKeyOffset);
+
+
         keyTimer = keyIntervalTime;
         deaKeyTimer = deactivateKeyIntervalTime;
         //activateComplete = false; deactivateComplete = false;

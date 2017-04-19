@@ -8,7 +8,7 @@ public class CommandManager : TungDoesNetworkingForyou
 {
     /*Prefabs to spawn*/
     public GameObject Elephant1;
-
+    public GameObject shellPrefab;
     /*Required components*/
     private ManagerTracker Tracker;
 
@@ -16,11 +16,6 @@ public class CommandManager : TungDoesNetworkingForyou
     {
         Tracker = FindObjectOfType<ManagerTracker>();
     }
-
-    //Lobby Commands////////////////////////////////////////////////////////////////
-
-    //Server callbacks
-
     ////////////////////////////////////////////////////////////////////////////////
 
     //UI Commands///////////////////////////////////////////////////////////////////
@@ -37,10 +32,12 @@ public class CommandManager : TungDoesNetworkingForyou
     }
 
     [Command]
-    public void CmdFire()
+    public void CmdFire(Vector3 Pos, Quaternion rot, int ID)
     {
-
+        SpawnCannonShell(Pos, rot, ID);
     }
+
+
 
     //Server callbacks
     [ServerCallback]
@@ -48,6 +45,18 @@ public class CommandManager : TungDoesNetworkingForyou
     {
         GameObject spawnedObject = Instantiate(Elephant1, Position, Rotation) as GameObject;
         NetworkServer.SpawnWithClientAuthority(spawnedObject, NetworkServer.connections[ID]);
+    }
+
+    [ServerCallback]
+    public void SpawnCannonShell(Vector3 pos, Quaternion rotation,int ID )
+    {
+
+        GameObject g = GameObject.Instantiate( shellPrefab, pos, rotation) as GameObject;
+        NetworkServer.SpawnWithClientAuthority(g, NetworkServer.connections[ID]);
+       Rigidbody r =  g.AddComponent<Rigidbody>();
+        r.useGravity = false;
+        r.AddForce(new Vector3(0, 20.0f * Time.deltaTime, 0), ForceMode.Force);
+        GameObject.Destroy(g, 5.0f);
     }
     ////////////////////////////////////////////////////////////////////////////////
 }

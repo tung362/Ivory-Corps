@@ -23,6 +23,7 @@ public class Cube : MonoBehaviour {
 
         if (other.tag == "Socket")
         {
+            Debug.Log("Hitting a socket");
             CubeSocket c;
             c = other.GetComponent<CubeSocket>();
             //currSocket = c.systType;

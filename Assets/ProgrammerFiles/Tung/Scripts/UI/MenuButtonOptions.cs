@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class MenuButtonOptions : TungDoesMathForYou
 {
     /*Settings*/
-    public string[] Texts; //0 = IP, 1 = Port
+    public List<string> Texts = new List<string>(); //0 = IP, 1 = Port
 
     /*Required components*/
     private ManagerTracker Tracker;
@@ -18,6 +18,11 @@ public class MenuButtonOptions : TungDoesMathForYou
     void Start()
     {
         Tracker = FindObjectOfType<ManagerTracker>();
+        TheNetworkManager = FindObjectOfType<NetworkManager>();
+    }
+
+    void Update()
+    {
     }
 
     //Adds a string into a text field
@@ -130,11 +135,23 @@ public class MenuButtonOptions : TungDoesMathForYou
     {
         //Find all childs within the hierarchy
         List<GameObject> childs = FindAllChilds(transform);
+        //Find all active managers in the hierachy
+        List<GameObject> activeChilds = new List<GameObject>();
 
+        //Get all active childs
         for (int i = 0; i < childs.Count; ++i)
         {
-            //Find all active managers
             MenuManager theMenuManager = childs[i].GetComponent<MenuManager>();
+            if (theMenuManager != null)
+            {
+                if (theMenuManager.Activated) activeChilds.Add(theMenuManager.gameObject);
+            }
+        }
+
+        for (int i = 0; i < activeChilds.Count; ++i)
+        {
+            //Find all active managers
+            MenuManager theMenuManager = activeChilds[i].GetComponent<MenuManager>();
             if (theMenuManager != null)
             {
                 if (theMenuManager.Activated)
@@ -163,6 +180,7 @@ public class MenuButtonOptions : TungDoesMathForYou
     //Host server
     public void Host()
     {
+        if (TheNetworkManager.IsClientConnected()) return;
         TheNetworkManager.networkPort = int.Parse(Texts[1]);
         TheNetworkManager.StartHost();
     }
@@ -170,9 +188,16 @@ public class MenuButtonOptions : TungDoesMathForYou
     //Connect to server
     public void Join()
     {
+        if(TheNetworkManager.IsClientConnected()) return;
         TheNetworkManager.networkAddress = Texts[0];
         TheNetworkManager.networkPort = int.Parse(Texts[1]);
         TheNetworkManager.StartClient();
+    }
+
+    public void Disconnect()
+    {
+        if (!TheNetworkManager.IsClientConnected()) return;
+        TheNetworkManager.StopHost();
     }
 
     //Exits the game

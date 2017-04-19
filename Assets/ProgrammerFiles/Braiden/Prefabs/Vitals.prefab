@@ -43,7 +43,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1249310239191060
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +194,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23522368641039174
 MeshRenderer:
@@ -225,6 +226,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33039023475575064
 MeshFilter:
@@ -351,6 +353,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Time: 1.46
   m_Parameters:
@@ -387,30 +390,15 @@ TrailRenderer:
       m_PostInfinity: 2
       m_RotationOrder: 0
     colorGradient:
-      key0:
-        serializedVersion: 2
-        rgba: 4278190080
-      key1:
-        serializedVersion: 2
-        rgba: 4278976256
-      key2:
-        serializedVersion: 2
-        rgba: 1327122
-      key3:
-        serializedVersion: 2
-        rgba: 0
-      key4:
-        serializedVersion: 2
-        rgba: 0
-      key5:
-        serializedVersion: 2
-        rgba: 0
-      key6:
-        serializedVersion: 2
-        rgba: 0
-      key7:
-        serializedVersion: 2
-        rgba: 0
+      serializedVersion: 2
+      key0: {r: 0, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 1, b: 0.043137256, a: 1}
+      key2: {r: 0.07058824, g: 0.2509804, b: 0.078431375, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 65535
       ctime2: 65535

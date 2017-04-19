@@ -50,7 +50,7 @@ public class VitalsManager : MonoBehaviour {
 
     }
 
-    private void Update()
+    public void Update()
     {
         leftCorner.transform.position = startPos;
         rightCorner.transform.position = endPos;
@@ -113,6 +113,16 @@ public class VitalsManager : MonoBehaviour {
         if (goUpZ && zAxis){followPos.z += Mathf.SmoothStep(zRange.x, zRange.y, Time.deltaTime * HeartRate);}
         else{followPos.z += Mathf.SmoothStep(zRange.x, zRange.y, Time.deltaTime * HeartRate);}
 
+    }
+
+    public void ActivateVitals()
+    {
+        this.gameObject.SetActive(true);
+    }
+
+    public void DeactivateVitals()
+    {
+        this.gameObject.SetActive(false);
     }
 
 }

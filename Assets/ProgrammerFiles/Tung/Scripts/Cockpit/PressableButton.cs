@@ -12,6 +12,7 @@ public class PressableButton : TungDoesMathForYou
 
     /*Data*/
     private float StartingY = 0;
+    private Vector3 StartingPosition;
     private bool Toggle = true;
 
     /*Callable functions*/
@@ -24,6 +25,7 @@ public class PressableButton : TungDoesMathForYou
     {
         TheRigidbody = GetComponent<Rigidbody>();
         StartingY = transform.localPosition.y;
+        StartingPosition = transform.localPosition;
     }
 
     void Update()
@@ -33,7 +35,9 @@ public class PressableButton : TungDoesMathForYou
 
     void UpdateButton()
     {
-        if (transform.localPosition.y < StartingY) TheRigidbody.velocity = transform.parent.transform.up * ButtonRiseSpeed * Time.fixedDeltaTime;
+        TheRigidbody.velocity = Vector3.zero;
+        transform.localPosition = new Vector3(StartingPosition.x, transform.localPosition.y, StartingPosition.z);
+        if (transform.localPosition.y < StartingY) TheRigidbody.velocity = transform.transform.up * ButtonRiseSpeed * Time.fixedDeltaTime;
         if (transform.localPosition.y > StartingY) transform.localPosition = new Vector3(transform.localPosition.x, StartingY, transform.localPosition.z);
         if (transform.localPosition.y < PressLimitY) transform.localPosition = new Vector3(transform.localPosition.x, PressLimitY, transform.localPosition.z);
 

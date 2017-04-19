@@ -12,12 +12,14 @@ using UnityEngine.Events;
      * adrenaline 
      * Keyboards
      */
+     
 public class CubeSystems : MonoBehaviour
 {
                 //EVENT STUFF\\
     //This will be called during any event
     public UnityEvent AnySystemActivatedEvent;
     //specific event
+    [Tooltip("Vitals[0], Adren[1], Cann1[2], Cann2[3], keyboard[4], de-vital[5], de-keyboard[6], de-adren[7]")]
     public UnityEvent[] SystemActivation;
 
     //CUBE STUFF
@@ -29,7 +31,7 @@ public class CubeSystems : MonoBehaviour
        
     }
 
-    private void Update()
+    public void Update()
     {
         
     }
@@ -44,6 +46,11 @@ public class CubeSystems : MonoBehaviour
 
     }
 
+    public void SystemAdrenalineBoot()
+    {
+        SystemActivation[1].Invoke();
+    }
+
     public void SystemCannonOneBoot()
     {
         SystemActivation[2].Invoke();
@@ -54,10 +61,7 @@ public class CubeSystems : MonoBehaviour
         SystemActivation[3].Invoke();
     }
 
-    public void SystemAdrenalineBoot()
-    {
-        SystemActivation[1].Invoke();
-    }
+
 
     public void SystemKeyboardBoot()
     {
@@ -72,6 +76,11 @@ public class CubeSystems : MonoBehaviour
     public void DeactivateKeyboardSystem()
     {
         SystemActivation[6].Invoke();
+    }
+
+    public void DeactivateAdrenalineSystem()
+    {
+        SystemActivation[7].Invoke();
     }
 
 }

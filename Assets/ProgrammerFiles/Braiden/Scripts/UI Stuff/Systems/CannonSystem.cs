@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//quick class needed as a placeholder for now
 public class CannonSystem : MonoBehaviour {
 
 	// Use this for initialization
@@ -10,7 +11,7 @@ public class CannonSystem : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
 		
 	}
 }

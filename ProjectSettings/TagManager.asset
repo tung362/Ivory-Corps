@@ -13,6 +13,7 @@ TagManager:
   - Ammo
   - Cube
   - Socket
+  - Ground
   layers:
   - Default
   - TransparentFX

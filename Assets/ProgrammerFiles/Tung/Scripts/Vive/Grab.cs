@@ -50,20 +50,18 @@ public class Grab : TungDoesMathForYou
     bool UpdateInput()
     {
         bool retval = true;
-
         //Checks
         if (ObjectToGrab == null)
         {
-            if (Hand.GetComponent<Rigidbody>() != null && !Hand.GetComponent<ObjectDetect>().TouchingButton) Hand.GetComponent<Rigidbody>().isKinematic = false;
+            //if (Hand.GetComponent<Rigidbody>() != null && !Hand.GetComponent<ObjectDetect>().TouchingButton) Hand.GetComponent<Rigidbody>().isKinematic = false;
             return true;
         }
         if (Vector3.Distance(ObjectToGrab.transform.position, Hand.transform.position) > MaximumGrabDistance)
         {
             ObjectToGrab = null;
-            if (Hand.GetComponent<Rigidbody>() != null && !Hand.GetComponent<ObjectDetect>().TouchingButton) Hand.GetComponent<Rigidbody>().isKinematic = false;
+            //if (Hand.GetComponent<Rigidbody>() != null && !Hand.GetComponent<ObjectDetect>().TouchingButton) Hand.GetComponent<Rigidbody>().isKinematic = false;
             return true;
         }
-
         //Passed all checks
         //Start
         if (Stick.Controller.GetPressDown(Stick.GripyButton)) retval = OnFirstPressed();
@@ -82,8 +80,9 @@ public class Grab : TungDoesMathForYou
             //Remove physics if there is any attacted
             ObjectToGrab.GetComponent<Item>().IsDefault = false;
             ObjectToGrab.GetComponent<Item>().GrabbedToggle = true;
-            if (Hand.GetComponent<Rigidbody>() != null) Hand.GetComponent<Rigidbody>().isKinematic = true;
         }
+
+        if (Hand.GetComponent<Rigidbody>() != null) Hand.GetComponent<Rigidbody>().isKinematic = true;
         return retval;
     }
 
@@ -105,7 +104,7 @@ public class Grab : TungDoesMathForYou
         {
             //To do: maybe add up and forward together but block off one of the axis
             //Try rotatearound
-            Hand.transform.position = Vector3.MoveTowards(Hand.transform.position, ObjectToGrab.GetComponent<Lever>().Handle.transform.position, MoveSpeed * Time.fixedDeltaTime);
+            Hand.transform.position = ObjectToGrab.GetComponent<Crank>().Handle.transform.position;
             Hand.transform.rotation = Quaternion.RotateTowards(Hand.transform.rotation, transform.rotation, RotationSpeed * Time.fixedDeltaTime);
 
             CalculateCrankValue();
@@ -135,9 +134,9 @@ public class Grab : TungDoesMathForYou
             Vector3 force = (transform.position - PreviousPosition) / Time.fixedDeltaTime;
             ObjectToGrab.GetComponent<Item>().ThrowForce = force;
             ObjectToGrab.GetComponent<Item>().DefaultToggle = true;
-
-            if (Hand.GetComponent<Rigidbody>() != null) Hand.GetComponent<Rigidbody>().isKinematic = false;
         }
+
+        if (Hand.GetComponent<Rigidbody>() != null) Hand.GetComponent<Rigidbody>().isKinematic = false;
         ObjectToGrab = null;
         return retval;
     }

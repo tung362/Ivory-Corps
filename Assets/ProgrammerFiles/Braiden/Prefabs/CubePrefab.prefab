@@ -19,9 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4414917312808024}
+  - component: {fileID: 65512623089381454}
   m_Layer: 0
   m_Name: CubePrefab
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,10 +36,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4192820806287760}
   - component: {fileID: 33073437630778924}
-  - component: {fileID: 65222053582832198}
   - component: {fileID: 23822373316751794}
-  - component: {fileID: 95254955627514594}
   - component: {fileID: 54989042867263982}
+  - component: {fileID: 95503231524447072}
+  - component: {fileID: 114483920784941930}
+  - component: {fileID: 65942034141750092}
   m_Layer: 0
   m_Name: CubeModel
   m_TagString: Cube
@@ -66,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1267341936786264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.047158, y: -0.09036918, z: -2.024728}
+  m_LocalPosition: {x: 2.13, y: 6.1194415, z: 2.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4192820806287760}
@@ -127,19 +129,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65222053582832198
+--- !u!65 &65512623089381454
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1267341936786264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65942034141750092
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1419265275311338}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95254955627514594
+--- !u!95 &95503231524447072
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -156,3 +170,15 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114483920784941930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419265275311338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47fe067e4390d843b46b7e2a1ef931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeAnimator: {fileID: 95503231524447072}
